@@ -30,4 +30,22 @@
   - update
  
 - SQL chamadas:
--  
+  - insert
+  - delete
+  - select
+  - update
+ 
+- SQL notas:
+  - insert
+  - delete
+  - select
+  - update
+ 
+### padrões de código do empório alegria  
+
+## **Sprint 1**
+
+## **Sprint 2**
+## **Sprint 3**
+## **Sprint 4**
+
