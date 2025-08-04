@@ -9,9 +9,9 @@
     <header>cabeçalho</header>
     <main>
       <?php
-            echo "bem-vindo ao sistema de gestão de alunos adadoc"
+            echo "bem-vindo ao sistema de gestão de alunos adado<br>";
         ?>        
-        <a href="#">Cadastrar aluno</a>
+        <a href="/home_alunos">Cadastrar aluno</a>
         <a href="#">Cadastrar Nota</a>
         <a href="#">Fazer chamada</a>
         <table>
