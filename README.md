@@ -28,4 +28,4 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 ### 11/08 Eliabe
 - Criado rotas, controladores e visualizações das páginas notas e chamadas
 - Criada branch PHP para finalizar esta etapa
-
+- Terminado o CSS das páginas. "Aguarda apenas pequenos retoques"
