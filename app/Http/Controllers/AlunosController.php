@@ -7,11 +7,14 @@ use Illuminate\Http\Request;
 
 class AlunosController extends Controller
 {
-    public function home(){
+    public function inicio(){
         return view("home");
     }
 
     public function alunos(){
         return view('alunos.pgAlunos');
+    }
+    public function aluno(){
+        return view('alunos.pgAluno');
     }
 }

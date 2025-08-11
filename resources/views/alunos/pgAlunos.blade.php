@@ -1,13 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alunos Cadastrados</title>
-</head>
-<body>
-<a href="#">Cadastrar Novo Aluno</a>
+@extends("layouts.main")
+@section("titulo", "home Alunos")
+@section("corpo")
+<a href="/aluno">Cadastrar Novo Aluno</a>
 <h1>Lista de Alunos cadastrados</h1>
-
-</body>
-</html>
+<table>
+    <tr>
+	    <th>Nome</th>
+    	<th>Faixa Etária</th>
+        <th>Idade</th>
+        <th>Telefone</th>
+        <th>Endereço</th>  
+        <th>Editar</th>
+        <th>Excluir</th>
+    </tr>
+    
+    <tr>
+        <td>Eliabe</td>
+        <td>ADAD SENIOR</td>
+        <td>19</td>
+        <td>049 9 99837-9858</td>
+        <td>Rua 30 de Março</td>
+        <td>Editar</td>
+        <td>Excluir</td>
+    </tr>
+</table>
+@endsection
