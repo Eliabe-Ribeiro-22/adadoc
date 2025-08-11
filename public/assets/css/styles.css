@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
+}
+
+:root{
+	--bg-main: #F8FCDA;
+	--bg-nav: #000;
+	--bg-footer: #000;
+	--bg-form: #01AFF1;
+	--bg-save: #00FF11;
+	--font-primary: #fff;
+	--font-secundary: #01AFF1;
+}
+
+main{
+	background: var(--bg-main);
+}
+
+header{
+	background: var(--bg-nav);
+	color: var(--font-primary);
+}
+
+footer{
+	background: var(--bg-footer);
+	color: var(--font-primary);
+}
+
+/*Home_Alunos, Novo Aluno*/
+form{
+	background: var(--bg-form);
+	color: var(--font-primary);
+}
+table{
+	background: var(--bg-form);
+	color: var(--font-primary);
+}
+/*voltar ao início + botoes de ação(exceto editar, salvar, alterar e excluir*/
+button{
+	background: var(--bg-footer);
+	color: var(--font-primary);
+}
+a{
+	background: var(--bg-footer);
+	color: var(--font-primary);
+}
+/*cadastrar, alterar*/
+button.salvar{
+	background: var(--bg-save);
+}
+
+.color-secundary{
+	color: var(--font-secundary);
+	text-align: center;
+
+}
+

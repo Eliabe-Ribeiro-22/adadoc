@@ -11,3 +11,16 @@ Também será feito um sistema de login para somente os professores acessarem o 
 ## Tecnologias utilizadas
 
 Laravel, JS, CSS, HTML, PHP e MySQL
+
+## Log de Eventos
+
+### 07/07 Eliabe
+- Criado repositório para códigos do site ADADOC
+- Desenvolvido 4 páginas do site no Figma(Planning)
+
+### 11/08 Eliabe
+- Criado banco de dados MySQL para sistema de alunos
+- Criado Controller para alunos
+- Criada Views para alunos
+- Criado Layouts para o sistema
+- Realizado CSS inicial
