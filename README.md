@@ -23,4 +23,9 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 - Criado Controller para alunos
 - Criada Views para alunos
 - Criado Layouts para o sistema
-- Realizado CSS inicial
+- Realizado CSS inicial do site
+
+### 11/08 Eliabe
+- Criado rotas, controladores e visualizações das páginas notas e chamadas
+- Criada branch PHP para finalizar esta etapa
+

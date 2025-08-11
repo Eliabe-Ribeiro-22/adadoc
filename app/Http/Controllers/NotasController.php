@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class NotasController extends Controller
 {
     public function notas(){
-        return view('chamadas.pgNotas');
+        return view('notas.pgNotas');
     }
 
     public function nota(){
-        return view('chamadas.pgNota');
+        return view('notas.pgNota');
     }
 }
