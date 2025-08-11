@@ -29,3 +29,4 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 - Criado rotas, controladores e visualizações das páginas notas e chamadas
 - Criada branch PHP para finalizar esta etapa
 - Terminado o CSS das páginas. "Aguarda apenas pequenos retoques"
+- Realizada criação de tabelas em SQL: notas, alunos e chamadas
