@@ -1,7 +1,7 @@
 CREATE TABLE CHAMADAS(
 	ID_CHAMADA int primary_key autoincrement NOT NULL,
-	DIA_CHAMADA datetime(dd/mm/yyyy at hh:mm) NOT NULL,
-	FAIXA_ETÁRIA_ALUNOS nvarchar(20) NOT NULL,
+	DATA_CHAMADA datetime(dd/mm/yyyy at hh:mm) NOT NULL,
+	FAIXA_ETARIA_ALUNOS nvarchar(20) NOT NULL,
 	DIVISA_CHAMADA nvarchar(20) NOT NULL,
 	PROFESSOR nvarchar(20),
 	QUANTIDADE_ALUNOS_PRESENTES int not null,
@@ -12,3 +12,42 @@ CREATE TABLE CHAMADAS(
 	-- ID_ALUNOS_JUSTIFICADOS
 	-- nome dos alunos presentes, ausentes e justificados
 );
+
+-- delete - tested
+DELETE FROM CHAMADAS WHERE ID_CHAMADA = 5;
+
+-- insert - tested
+	INSERT INTO CHAMADAS(
+		DATA_CHAMADA, 
+		FAIXA_ETARIA_ALUNOS, 
+		DIVISA_CHAMADA, 
+		PROFESSOR, 
+		QUANTIDADE_ALUNOS_PRESENTES, 
+		QUANTIDADE_ALUNOS_AUSENTES, 
+		QUANTIDADE_ALUNOS_JUSTIFICADAS
+		) 
+	VALUES(
+		'2025-12-22',
+		'ADAD 1',
+		'IDENTIFICACAO',
+		'VOLNI',
+		'20',
+		'6',
+		'3'
+		);
+
+-- listar chamadas feitas - tested
+SELECT * FROM chamadas;
+
+-- update - tested
+UPDATE `chamadas` 
+	SET `DATA_CHAMADA`='2025-11-11',
+		`FAIXA_ETARIA_ALUNOS`='ADAD SENIOR',
+		`DIVISA_CHAMADA`='ZOOLOGIA 1',
+		`PROFESSOR`='EDEN',
+		`QUANTIDADE_ALUNOS_PRESENTES`='15',
+		`QUANTIDADE_ALUNOS_AUSENTES`='5',
+		`QUANTIDADE_ALUNOS_JUSTIFICADAS`='3',
+		`created_at`='2025-12-22',
+		`updated_at`='2025-12-22' 
+	WHERE `id`= 1;

@@ -80,9 +80,8 @@
   - delete
   - select
   - update
-## **Sprint 3**
 
-### ***FAZER HTML***
+## **Sprint 3**
 - home_alunos
   - table alunos cadastrados em ordem alfabética
   - botão cadastrar novo aluno     

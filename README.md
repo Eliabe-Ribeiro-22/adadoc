@@ -30,3 +30,7 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 - Criada branch PHP para finalizar esta etapa
 - Terminado o CSS das páginas. "Aguarda apenas pequenos retoques"
 - Realizada criação de tabelas em SQL: notas, alunos e chamadas
+
+### 13/08 Eliabe
+
+- Criado migrations para tabelas alunos, notas e chamadas em PHP + MySQL
