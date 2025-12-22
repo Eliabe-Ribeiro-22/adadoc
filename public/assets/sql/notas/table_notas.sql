@@ -7,7 +7,7 @@ CREATE TABLE NOTAS(
 	DATA_NOTA date not null,
 );
 
--- insert - 
+-- insert - tested
 INSERT INTO 
 NOTAS(
 	NOME_ALUNO, 
@@ -26,7 +26,8 @@ VALUES(
 DELETE FROM NOTAS WHERE ID_NOTA = 3;
 
 -- update
-
--- select - 
-SELECT * FROM NOTAS order_by DESC DATA_NOTA;
-SELECT DATA_NOTA, VALOR_NOTA, FAIXA_ETARIA_ALUNO, NOME_ALUNO FROM NOTAS order_by DESC DATA_NOTA;
+UPDATE `notas` SET `id`='[value-1]',`NOME_ALUNO`='[value-2]',`FAIXA_ETARIA_ALUNO`='[value-3]',`VALOR_NOTA`='[value-4]',`DATA_NOTA`='[value-5]',`created_at`='[value-6]',`updated_at`='[value-7]' WHERE 1
+-- select - tested
+SELECT * FROM NOTAS ORDER BY DATA_NOTA DESC;
+-- tested
+SELECT DATA_NOTA, VALOR_NOTA, FAIXA_ETARIA_ALUNO, NOME_ALUNO FROM NOTAS ORDER BY DATA_NOTA DESC;
