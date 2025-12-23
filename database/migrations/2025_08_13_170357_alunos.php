@@ -19,7 +19,6 @@ return new class extends Migration
             $table->date('DATA_NASCIMENTO_ALUNO');
             $table->string('TELEFONE_ALUNO')->nullable();
             $table->string('EMAIL_ALUNO')->nullable();
-            $table->string('CIDADE_ALUNO')->nullable();
             $table->timestamps();
         }
         );  

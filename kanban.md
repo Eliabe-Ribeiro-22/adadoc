@@ -1,21 +1,21 @@
 ## Kanban - ADADOC
 ## TO DO
+- integrar banco de dados
+
+- html através do laravel/php
+  - alunos
+  - chamadas
+  - notas
+
+
+## DOING
 - home_alunos
-  - table alunos cadastrados em ordem alfabética
+  - table alunos cadastrados em ordem alfabética A-Z
 - home_chamada
   - table chamadas feitas por ordem de data, sendo as mais recentes primeiro
 - home_notas
   - table notas de alunos por ordem de data, sendo as mais recentes primeiro
 
-
-## DOING
-- integrar banco de dados com html através do laravel/php
-  - alunos
-    - campos?
-  - chamadas
-    - campos?
-  - notas
-    - campos?
 ## TEST
 - home_alunos
   - botão cadastrar novo aluno     

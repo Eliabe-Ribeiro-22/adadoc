@@ -16,8 +16,7 @@ INSERT INTO ALUNOS(
 	ENDERECO_ALUNO, 
 	DATA_NASCIMENTO_ALUNO, 
 	TELEFONE_ALUNO,
-	EMAIL_ALUNO, 
-	CIDADE_ALUNO
+	EMAIL_ALUNO
 	) 
 VALUES(
 	"Guilherme",
@@ -26,7 +25,6 @@ VALUES(
 	"03/05/2025",
 	"49 9 1234-5678",
 	"gui@gmail.com",
-	"Campo Belo do Sul"
 );
 
 -- DELETE - tested
@@ -44,7 +42,6 @@ UPDATE `alunos`
 	`DATA_NASCIMENTO_ALUNO`='2007-12-17',
 	`TELEFONE_ALUNO`='49 9 8764-0986',
 	`EMAIL_ALUNO`='zequi@gmail.com',
-	`CIDADE_ALUNO`='Ponte Alta do Norte',
 	`created_at`='2025-12-22',
 	`updated_at`='2025-12-22' 
 	WHERE `id`='2';

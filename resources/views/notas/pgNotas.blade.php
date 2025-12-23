@@ -2,14 +2,43 @@
 @section("titulo", "home notas")
 @section("corpo")
 <a href="/chamada">Cadastrar Nova Nota</a>
+<a href="#">Gerar Média alunos</a>
 <h1>Lista de Notas cadastradas</h1>
+<!-- - home_notas
+  - table notas de alunos por ordem de data, sendo as mais recentes -->
 <table>
     <tr>
+        <th>DATA</th>
+        <th>NOTA</th>
+        <th>FAIXA ETARIA</th>
+        <th>ALUNO</th>
 	    <th>Editar</th>
         <th>Excluir</th>
     </tr>
     
     <tr>
+        <td>11/11/2025</td>
+        <td>9,75</td>
+        <td>ADAD 2</td>
+        <td>JOSE PEDRO</td>
+        <td>&#x1F589;</td>
+        <td>&#x1F5D1;</td>
+    </tr>
+
+    <tr>
+        <td>09/11/2025</td>
+        <td>9,9</td>
+        <td>ADAD 1</td>
+        <td>LOHAN</td>
+        <td>&#x1F589;</td>
+        <td>&#x1F5D1;</td>
+    </tr>
+
+    <tr>
+        <td>02/11/2025</td>
+        <td>10</td>
+        <td>ADAD MIRIM</td>
+        <td>ELISE</td>
         <td>&#x1F589;</td>
         <td>&#x1F5D1;</td>
     </tr>
