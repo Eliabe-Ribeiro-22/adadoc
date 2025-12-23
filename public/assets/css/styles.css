@@ -34,10 +34,19 @@ form{
 	background: var(--bg-form);
 	color: var(--font-primary);
 }
+
 table{
 	background: var(--bg-form);
 	color: var(--font-primary);
 }
+/*cada célula terá as propriedades a seguir, seja qual tabela de resultados for*/
+td{
+	border-top: 3px solid white;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
 /*voltar ao início + botoes de ação(exceto editar, salvar, alterar e excluir*/
 button{
 	background: var(--bg-footer);

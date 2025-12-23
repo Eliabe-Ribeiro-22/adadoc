@@ -9,9 +9,9 @@
 <body>
 	<header>
 		<a href="">fazer css nav</a>
-		<a href="/home_alunos">Cadastrar aluno</a>
-        <a href="/home_notas">Cadastrar Nota</a>
-        <a href="/home_chamadas">Fazer chamada</a>
+		<a href="/home_alunos">Alunos</a>
+        <a href="/home_notas">Notas</a>
+        <a href="/home_chamadas">Chamadas</a>
        
 		<a href="{{route('inicio')}}">Voltar ao início</a>
 	</header>

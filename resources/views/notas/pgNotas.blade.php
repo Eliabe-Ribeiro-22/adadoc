@@ -10,8 +10,8 @@
     </tr>
     
     <tr>
-        <td>Editar</td>
-        <td>Excluir</td>
+        <td>&#x1F589;</td>
+        <td>&#x1F5D1;</td>
     </tr>
 </table>
 @endsection

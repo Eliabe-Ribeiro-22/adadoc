@@ -20,8 +20,8 @@
         <td>19</td>
         <td>049 9 99837-9858</td>
         <td>Rua 30 de Março</td>
-        <td>Editar</td>
-        <td>Excluir</td>
+        <td>&#x1F589;</td>
+        <td>&#x1F5D1;</td>
     </tr>
 </table>
 @endsection

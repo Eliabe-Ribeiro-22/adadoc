@@ -93,7 +93,8 @@
   - botão cadastrar nova nota
 
 ## **Sprint 4**
-- integrar banco de dados com html através do laravel/php
+- html através do laravel/php
+- integrar banco de dados 
 
 
 ## **SPRINT 5**
