@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('FAIXA_ETARIA_ALUNO');
             $table->string('ENDERECO_ALUNO')->nullable();
             $table->date('DATA_NASCIMENTO_ALUNO');
-            $table->string('TELEFONE_ALUNO')->nullable();
+            $table->string('CELULAR_ALUNO')->nullable();
             $table->string('EMAIL_ALUNO')->nullable();
             $table->timestamps();
         }

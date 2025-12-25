@@ -3,16 +3,34 @@
 @section("titulo", "cadastrar novo aluno")
 @section("corpo")
 <h1 class="color-secundary">Cadastrar novo aluno</h1>
+<a href="/">Voltar ao início</a>
 <form>
 	<fieldset>
 		<label>NOME:</label>
+		<input type="text" name="NOME_ALUNO">
+
 		<label>FAIXA ETARIA:</label>
+		<input type="text" name="FAIXA_ETARIA_ALUNO">
+
 		<label>ENDERECO:</label>
-		<label>DATA DE NASCIMENTO:</label>
-		<label>CELULAR:</label>
-		<label>EMAIL:</label>
+		<input type="text" name="ENDERECO_ALUNO">
 		
-		<button class="salvar">Salvar</button>
+		<label>DATA DE NASCIMENTO:</label>
+		<input type="date" name="DATA_NASCIMENTO_ALUNO">
+
+
+		<label>CELULAR:</label>
+		<input type="tel" name="CELULAR_ALUNO" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="049 91111-1111">
+		
+
+		<label>EMAIL:</label>
+		<input type="email" name="EMAIL_ALUNO">
+		
+		<div style="display: flex;">
+			<button class="salvar">Salvar</button>
+			<button class="cancelar">Cancelar</button>	
+		</div>
+		
 	</fieldset>
 </form>
 @endsection

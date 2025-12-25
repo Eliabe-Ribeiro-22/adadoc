@@ -5,7 +5,16 @@
 <h1 class="color-secundary">Cadastrar nova nota</h1>
 <form>
 	<fieldset>
-		<button class="salvar">Salvar</button>
+		<label>FAIXA ETARIA</label>
+		<label>NOME DO ALUNO</label>
+		<label>NOTA</label>
+		<label>DATA</label>
+		
+		<div style="display: flex;">
+			<button class="salvar">Salvar</button>
+			<button class="cancelar">Cancelar</button>	
+		</div>
+		
 	</fieldset>
 </form>
 @endsection

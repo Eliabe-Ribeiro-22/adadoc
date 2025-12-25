@@ -5,7 +5,12 @@
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
 <form>
 	<fieldset>
-		<button class="salvar">Salvar</button>
+	
+
+		<div style="display: flex;">
+			<button class="salvar">Salvar</button>
+			<button class="cancelar">Cancelar</button>	
+		</div>
 	</fieldset>
 </form>
 @endsection

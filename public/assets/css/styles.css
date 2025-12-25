@@ -11,6 +11,7 @@
 	--bg-footer: #000;
 	--bg-form: #01AFF1;
 	--bg-save: #00FF11;
+	--bg-cancel: #D6D6D6 ;
 	--font-primary: #fff;
 	--font-secundary: #01AFF1;
 }
@@ -33,8 +34,19 @@ footer{
 form{
 	background: var(--bg-form);
 	color: var(--font-primary);
+	margin: 0 10vw;
+	width: 80vw;
 }
 
+label{
+	display: block;
+	margin-top: 20px;
+}
+
+input{
+	width: 100%;
+	height: 2rem;
+}
 table{
 	background: var(--bg-form);
 	color: var(--font-primary);
@@ -59,11 +71,31 @@ a{
 /*cadastrar, alterar*/
 button.salvar{
 	background: var(--bg-save);
+	width: 50%;
+	height: 4rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+button.cancelar{
+	width: 50%;
+	height: 4rem;
+	background: var(--bg-cancel);
+	cursor: pointer;
+	font-size: 2rem;
+	color: black;
+}
+
+button.alterar{
+	background: var(--bg-save);
+	width: 50%;
+	height: 4rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 .color-secundary{
 	color: var(--font-secundary);
 	text-align: center;
-
 }
 
