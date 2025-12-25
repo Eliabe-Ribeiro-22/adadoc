@@ -3,7 +3,7 @@
 - integrar banco de dados
 
 - html através do laravel/php
-  - alunos
+  - alunos - ok
   - chamadas
   - notas
 

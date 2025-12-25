@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('notas', function (Blueprint $table){
             $table->id();
-            $table->string('NOME_ALUNO');
             $table->string('FAIXA_ETARIA_ALUNO');
+            $table->string('NOME_ALUNO');
+            // PEGAR O CODIGO PARA DESCOBRIR O NOME DO ALUNO, SEM INTERACAO DO USUARIO VISANDO EVITAR ERROS
             $table->integer('VALOR_NOTA');
             $table->date('DATA_NOTA');
             $table->timestamps();
