@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('FAIXA_ETARIA_ALUNOS');
             $table->string('DIVISA_CHAMADA');
             $table->string('PROFESSOR')->nullable();
-            $table->integer('QUANTIDADE_ALUNOS_PRESENTES');
-            $table->integer('QUANTIDADE_ALUNOS_AUSENTES');
-            $table->integer('QUANTIDADE_ALUNOS_JUSTIFICADAS');
+            $table->integer('QUANTIDADE_PRESENTES');
+            $table->integer('QUANTIDADE_AUSENTES');
+            $table->integer('QUANTIDADE_JUSTIFICADAS');
             $table->timestamps();
         }
         );
