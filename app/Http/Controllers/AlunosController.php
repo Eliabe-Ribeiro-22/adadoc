@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 use App\Models\ALuno;
 class AlunosController extends Controller
 {
+    // rota principal do site
     public function inicio(){
         return view("home");
     }
 
     public function alunos(){
-        return view('alunos.pgAlunos');
+        $alunos = Aluno::all()->sortByDesc("NOME_ALUNO");
+        return view('alunos.pgAlunos', ["alunos" => $alunos]);
     }
     public function aluno(){
         return view('alunos.pgAluno');

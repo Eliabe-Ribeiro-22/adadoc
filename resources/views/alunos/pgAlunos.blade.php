@@ -15,25 +15,16 @@
         <th>Editar</th>
         <th>Excluir</th>
     </tr>
-    
-    <tr>
-        <td>ELIABE</td>
-        <td>ADAD SENIOR</td>
-        <td>19</td>
-        <td>049 9 99837-9858</td>
-        <td>Rua 30 de Março</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
-
-    <tr>
-        <td>JOAO OTAVIO</td>
-        <td>ADAD 2</td>
-        <td>14</td>
-        <td>049 9 1234-5678</td>
-        <td>AVENIDA PATO BRANCO</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
+    <?php
+    foreach($alunos as $aluno){
+        echo "<td>" . $aluno->NOME_ALUNO . "</td>";
+        echo "<td>" . $aluno->FAIXA_ETARIA_ALUNO . "</td>";
+        echo "<td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
+        echo "<td>" . $aluno->CELULAR_ALUNO . "</td>";
+        echo "<td>" . $aluno->ENDERECO_ALUNO . "</td>";
+        echo "<td>&#x1F589;</td>";
+        echo "<td>&#x1F5D1;</td>";
+    }
+    ?>
 </table>
 @endsection
