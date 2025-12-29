@@ -17,13 +17,15 @@
     </tr>
     <?php
     foreach($alunos as $aluno){
-        echo "<td>" . $aluno->NOME_ALUNO . "</td>";
-        echo "<td>" . $aluno->FAIXA_ETARIA_ALUNO . "</td>";
-        echo "<td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
-        echo "<td>" . $aluno->CELULAR_ALUNO . "</td>";
-        echo "<td>" . $aluno->ENDERECO_ALUNO . "</td>";
-        echo "<td>&#x1F589;</td>";
-        echo "<td>&#x1F5D1;</td>";
+        echo "<tr>";
+        echo " <td>" . $aluno->NOME_ALUNO . "</td>";
+        echo " <td>" . $aluno->FAIXA_ETARIA_ALUNO . "</td>";
+        echo " <td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
+        echo " <td>" . $aluno->CELULAR_ALUNO . "</td>";
+        echo " <td>" . $aluno->ENDERECO_ALUNO . "</td>";
+        echo " <td>&#x1F589;</td>";
+        echo " <td>&#x1F5D1;</td>";
+        echo "</tr>";
     }
     ?>
 </table>
