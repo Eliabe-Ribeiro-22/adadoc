@@ -15,6 +15,14 @@
        
 		<a href="{{route('inicio')}}">Voltar ao início</a>
 	</header>
-	<main>@yield('corpo')</main>
+	<main>
+		
+		<!-- exibir mensagemm de erro ou acerto na view -->
+		@if(session('msg'))
+			<script>alert("<?php echo session('msg') ?>")</script>
+		@endif
+
+		@yield('corpo')
+	</main>
 	<footer>fazer rodapé</footer>
 </body>

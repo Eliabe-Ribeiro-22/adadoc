@@ -4,13 +4,21 @@
 @section("corpo")
 <h1 class="color-secundary">Cadastrar novo aluno</h1>
 <a href="/">Voltar ao início</a>
-<form>
+<form action="/aluno" method="POST">
+	@csrf
 	<fieldset>
 		<label>NOME:</label>
 		<input type="text" name="NOME_ALUNO">
 
 		<label>FAIXA ETARIA:</label>
-		<input type="text" name="FAIXA_ETARIA_ALUNO">
+		
+		<select name="FAIXA" id="FAIXA">
+			<option value="MIRIM">MIRIM</option>
+			<option value="ADAD_1">ADAD 1</option>
+			<option value="ADAD_2">ADAD 2</option>
+			<option value="SENIOR">SENIOR</option>
+		</select>
+		
 
 		<label>ENDERECO:</label>
 		<input type="text" name="ENDERECO_ALUNO">
@@ -20,7 +28,7 @@
 
 
 		<label>CELULAR:</label>
-		<input type="tel" name="CELULAR_ALUNO" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="049 91111-1111">
+		<input type="tel" name="CELULAR_ALUNO" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="49 91111-1111">
 		
 
 		<label>EMAIL:</label>

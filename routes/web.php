@@ -15,6 +15,8 @@ Route::get('/', [AlunosController::class, 'inicio'])->name('inicio');
 Route::get('/home_alunos',[AlunosController::class, 'alunos']);
 Route::get('/aluno', [AlunosController::class, 'aluno']);
 
+// cadastrar novo aluno
+Route::post('/aluno', [AlunosController::class, 'create']);
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);
