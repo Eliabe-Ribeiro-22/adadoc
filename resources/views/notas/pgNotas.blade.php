@@ -19,8 +19,10 @@
     <?php  
     foreach ($notas as $nota) {
         echo "<tr>";
+        echo "<td>" . $nota->DATA_NOTA . "</td>";
+        echo "<td>" . $nota->VALOR_NOTA . "</td>";
         echo "<td>" . $nota->FAIXA . "</td>";
-        echo "<td>" . $nota->NOME_ALUNO . "</td>";
+        echo "<td>" . $nota->NOME_ALUNO . "</td>";        
         echo "<td>&#x1F589;</td>";
         echo "<td>&#x1F5D1;</td>";
         echo "</tr>";
