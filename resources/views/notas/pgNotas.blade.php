@@ -15,8 +15,21 @@
 	    <th>Editar</th>
         <th>Excluir</th>
     </tr>
+
+    <?php  
+    foreach ($notas as $nota) {
+        echo "<tr>";
+        echo "<td>" . $nota->FAIXA . "</td>";
+        echo "<td>" . $nota->NOME_ALUNO . "</td>";
+        echo "<td>&#x1F589;</td>";
+        echo "<td>&#x1F5D1;</td>";
+        echo "</tr>";
+    }
+
+
+    ?>
     
-    <tr>
+    <!-- <tr>
         <td>11/11/2025</td>
         <td>9,75</td>
         <td>ADAD 2</td>
@@ -41,6 +54,6 @@
         <td>ELISE</td>
         <td>&#x1F589;</td>
         <td>&#x1F5D1;</td>
-    </tr>
+    </tr> -->
 </table>
 @endsection

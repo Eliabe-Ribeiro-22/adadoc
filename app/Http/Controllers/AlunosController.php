@@ -15,8 +15,15 @@ class AlunosController extends Controller
     public function alunos(){
         // exibir alunos em ordem alfabética
         $alunos = Aluno::orderBy('NOME_ALUNO')->get();
+
         // se fosse em decrescente
         //  $alunos = Aluno::orderByDesc('NOME_ALUNO')->get();
+        // outras opções
+        //    $allAlunos = Aluno::all(); // Retrieves all records
+       //     $sortedAlunos = $allAlunos->sortBy('name'); // Sorts by the 'name' attribute ascending
+
+         // For descending order, use sortByDesc():
+                // $sortedAlunosDesc = $allAlunos->sortByDesc('name');
         return view('alunos.pgAlunos', ["alunos" => $alunos]);
     }
     public function aluno(){

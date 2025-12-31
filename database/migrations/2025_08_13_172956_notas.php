@@ -1,4 +1,4 @@
-<?php
+0<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('notas', function (Blueprint $table){
             $table->id();
-            $table->string('FAIXA_ETARIA_ALUNO');
+            $table->string('FAIXA');
             $table->string('NOME_ALUNO');
             // PEGAR O CODIGO PARA DESCOBRIR O NOME DO ALUNO, SEM INTERACAO DO USUARIO VISANDO EVITAR ERROS
             $table->integer('VALOR_NOTA');
