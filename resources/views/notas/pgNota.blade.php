@@ -3,6 +3,13 @@
 @section("titulo", "cadastrar nova nota")
 @section("corpo")
 <h1 class="color-secundary">Cadastrar nova nota</h1>
+<?php 
+foreach ($alunos as $aluno) {
+	echo $aluno->id ."<br>";
+	echo $aluno->NOME_ALUNO ."<br>";
+}
+	
+?>
 <form method="post" action="/nota">
 	@csrf
 	<fieldset>
@@ -13,8 +20,16 @@
 			<option value="adad2">ADAD 2</option>
 			<option value="senior">SENIOR</option>
 		</select>
+
+		<?php
+		// caso mirim -> pesquisar todos alunos com a faixa mirim
+		// caso adad1 -> pesquisar todos os alunos com a faixa adad1
+		// caso adad2 -> pesquisar todos os alunos com a faixa adad2
+		// caso senior -> pesquisar todos os alunos com a faixa senior
+		?>
 		
-		
+		<label>Id_aluno</label>
+		<input type="number" name="aluno_id">
 		<label>NOME DO ALUNO</label>
 		<input type="text" name="NOME_ALUNO">
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 

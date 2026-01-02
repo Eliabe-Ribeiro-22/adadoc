@@ -9,15 +9,21 @@ use Illuminate\Http\Request;
 // usando modelo Nota
 use App\Models\Nota;
 
+// modelo ALunos - one to many
+use App\Models\Aluno;
+
 class NotasController extends Controller
 {
     public function notas(){
+        // falta ordenar por
         $notas = Nota::all();
         return view('notas.pgNotas', ['notas'=> $notas]);
     }
 
     public function nota(){
-        return view('notas.pgNota');
+        $alunos = Aluno::orderBy('NOME_ALUNO')->get();
+
+        return view('notas.pgNota',['alunos' => $alunos]);
     }
 
     public function create(Request $request){
@@ -29,6 +35,9 @@ class NotasController extends Controller
             $nota->VALOR_NOTA = $request->VALOR_NOTA;
             $nota->DATA_NOTA = $request->DATA_NOTA;
 
+            // chuchu
+            $nota->aluno_id = $request->aluno_id;
+            
             //SALVA NO BANCO
             $nota->save();
             return redirect('/home_notas')->with('msg', 'Nota cadastrada com sucesso');
