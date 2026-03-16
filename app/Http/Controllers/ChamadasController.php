@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
+// Usando a model Chamada
 use App\Models\Chamada;
 
 
 class ChamadasController extends Controller
 {
     public function chamadas(){
-        return view('chamadas.pgChamadas');
+        $chamadas = Chamada::all();
+        return view('chamadas.pgChamadas', ['chamadas' => $chamadas]);
     }
     
     public function chamada(){

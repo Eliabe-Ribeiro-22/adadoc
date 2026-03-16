@@ -17,32 +17,18 @@
 
     </tr>
 
-    <tr>
-        <td>24/08/2025</td>
-        <td>10</td>
-        <td>MIRIM</td>
-        <td>VANESSA</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
 
-    <tr>
-        <td>17/08/2025</td>
-        <td>14</td>
-        <td>MIRIM</td>
-        <td>VANESSA</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
-
-
-    <tr>
-        <td>10/08/2025</td>
-        <td>20</td>
-        <td>MIRIM</td>
-        <td>EDEN</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
+    <?php
+    foreach($chamadas as $chamada){
+        echo "<tr>";
+        echo " <td>" . $chamada->DATA_CHAMADA . "</td>";
+        echo " <td>" . $chamada->QUANTIDADE_PRESENTES . "</td>";
+        echo " <td>" . $chamada->FAIXA_ETARIA_ALUNOS . "</td>";
+        echo " <td>" . $chamada->PROFESSOR . "</td>";
+        echo " <td>&#x1F589;</td>";
+        echo " <td>&#x1F5D1;</td>";
+        echo "</tr>";
+    }
+    ?>
 </table>
 @endsection
