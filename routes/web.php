@@ -27,3 +27,5 @@ Route::post('/nota', [NotasController::class, 'create']);
 // Rotas de Chamadas
 Route::get('/home_chamadas', [ChamadasController::class, 'chamadas']);
 Route::get('/chamada', [ChamadasController::class, 'chamada']);
+// cadastrar nova chamada
+Route::post('/chamada', [ChamadasController::class, 'create']);
