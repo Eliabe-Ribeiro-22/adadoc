@@ -24,7 +24,7 @@
         echo "<td>" . $nota->FAIXA . "</td>";
         echo "<td>" . $nota->NOME_ALUNO . "</td>";        
         echo "<td>&#x1F589;</td>";
-        echo "<td>&#x1F5D1;</td>";
+        echo "<td><a href='' class='excluir'>&#x1F5D1;</a></td>";
         echo "</tr>";
     }
 

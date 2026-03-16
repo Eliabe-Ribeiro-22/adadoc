@@ -26,7 +26,7 @@
         echo " <td>" . $chamada->FAIXA_ETARIA_ALUNOS . "</td>";
         echo " <td>" . $chamada->PROFESSOR . "</td>";
         echo " <td>&#x1F589;</td>";
-        echo " <td>&#x1F5D1;</td>";
+        echo " <td><a href='' class='excluir'>&#x1F5D1;</a></td>";
         echo "</tr>";
     }
     ?>
