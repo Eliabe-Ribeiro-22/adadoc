@@ -15,7 +15,7 @@ use App\Models\Aluno;
 class NotasController extends Controller
 {
     public function notas(){
-        // falta 'ordenar por'
+        // falta 'ordenar por' data desc
         $notas = Nota::all();
         return view('notas.pgNotas', ['notas'=> $notas]);
     }
