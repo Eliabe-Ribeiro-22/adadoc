@@ -2,9 +2,13 @@
 
 @section("titulo", "cadastrar novo aluno")
 @section("corpo")
+
 <h1 class="color-secundary">Cadastrar novo aluno</h1>
 <a href="/">Voltar ao início</a>
-<form action="/aluno" method="POST">
+
+
+
+<form action="/aluno" method="POST" class="inserir">
 	@csrf
 	<fieldset>
 		<label>NOME:</label>

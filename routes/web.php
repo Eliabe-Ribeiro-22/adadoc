@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 // Controlador de Alunos cadastrados
 use App\Http\Controllers\AlunosController;
 
@@ -16,16 +17,21 @@ Route::get('/home_alunos',[AlunosController::class, 'alunos']);
 Route::get('/aluno', [AlunosController::class, 'aluno']);
 // cadastrar novo aluno
 Route::post('/aluno', [AlunosController::class, 'create']);
+// deletar aluno
+Route::delete('/delaluno/{id}', [AlunosController::class, 'delete'])->name('delaluno');
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);
 Route::get('/nota', [NotasController::class, 'nota']);
 //cadastrar nova nota
 Route::post('/nota', [NotasController::class, 'create']);
-
+// deletar nota
+Route::delete('/delnota/{id}', [NotasController::class, 'delete'])->name('delnota');
 
 // Rotas de Chamadas
 Route::get('/home_chamadas', [ChamadasController::class, 'chamadas']);
 Route::get('/chamada', [ChamadasController::class, 'chamada']);
 // cadastrar nova chamada
 Route::post('/chamada', [ChamadasController::class, 'create']);
+// Deletar chamada
+Route::delete('/delchamada/{id}', [ChamadasController::class, 'delete'])->name('delchamada');

@@ -35,8 +35,8 @@ class NotasController extends Controller
             $nota->VALOR_NOTA = $request->VALOR_NOTA;
             $nota->DATA_NOTA = $request->DATA_NOTA;
 
-            // chuchu
-            $nota->aluno_id = $request->aluno_id;
+            // VER outro dia. xuxu
+           // $nota->aluno_id = $request->aluno_id;
             
             //SALVA NO BANCO
             $nota->save();
@@ -44,7 +44,14 @@ class NotasController extends Controller
         }catch(Exception $e){
             return redirect('/home_notas')->with('msg', 'Erro ao cadastrar nota. Tente novamente mais tarde!');
         }
-        
+    }
 
+    public function delete(int $id){
+        try{
+            Nota::findOrFail($id)->delete();
+            return redirect('/home_notas')->with('msg', "Nota $id excluida com sucesso");
+        }catch(Exception $e){
+             return redirect('/home_notas')->with('msg', 'Erro ao excluir nota. Tente novamente mais tarde');
+        }
     }
 }

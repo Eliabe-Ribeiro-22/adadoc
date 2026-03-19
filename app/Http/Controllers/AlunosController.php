@@ -46,7 +46,15 @@ class AlunosController extends Controller
         }catch(Exception $e){
             return redirect("/home_alunos")->with('msg', 'Erro ao cadastrar o aluno. Tente novamente mais tarde');
         }
+    }
 
-        
+    public function delete(int $id){
+        try{
+            Aluno::FindOrFail($id)->delete();
+            return redirect('/home_alunos')->with('msg', "Aluno $id deletado com suceso");
+        }catch(Exception $e){
+            return redirect('/home_alunos')->with('msg', 'Erro ao deletar aluno. Tente novamente mais tarde');
+        }
+
     }
 }
