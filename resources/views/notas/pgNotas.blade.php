@@ -19,16 +19,25 @@
     <?php  
     foreach ($notas as $nota) {
         echo "<tr>";
+        //echo "<td>" . $nota->id . "</td>";
         echo "<td>" . $nota->DATA_NOTA . "</td>";
         echo "<td>" . $nota->VALOR_NOTA . "</td>";
         echo "<td>" . $nota->FAIXA . "</td>";
         echo "<td>" . $nota->NOME_ALUNO . "</td>";        
         echo "<td>&#x1F589;</td>";
-        echo "<td><a href='' class='excluir'>&#x1F5D1;</a></td>";
-        echo "</tr>";
+        echo "<td>";
+    ?>
+    
+    <form method="post" action="{{ route('delnota', ['id' => $nota->id])}}" >
+        @csrf
+        @method('delete')
+        <button class='excluir'>&#x1F5D1;</button></td>
+    </form>
+    </tr>
+    
+
+    <?php
     }
-
-
     ?>
     
     <!-- <tr>

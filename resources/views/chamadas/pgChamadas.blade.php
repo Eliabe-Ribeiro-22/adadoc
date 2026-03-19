@@ -1,4 +1,4 @@
-@extends("layouts.main")
+-@extends("layouts.main")
 @section("titulo", "home chamadas")
 @section("corpo")
 <a href="/chamada">Cadastrar Nova Chamada</a>
@@ -28,13 +28,13 @@
         echo " <td>" . $chamada->PROFESSOR . "</td>";
         echo " <td>&#x1F589;</td>";
         echo "<td>";?>        
-        <!-- <form action="{{route('delchamada', ['id'  => $chamada->id])}}" method='post'>  
+        <form action="{{route('delchamada', ['id'  => $chamada->id])}}" method='post'>  
         @csrf 
         @method('delete')
         <button class='excluir'>&#x1F5D1;</button>
         </form>
         </td>
-        </tr> -->
+        </tr>
     <?php
     }
     ?>    

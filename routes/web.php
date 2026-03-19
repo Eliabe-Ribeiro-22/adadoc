@@ -25,7 +25,7 @@ Route::get('/nota', [NotasController::class, 'nota']);
 //cadastrar nova nota
 Route::post('/nota', [NotasController::class, 'create']);
 // deletar nota
-Route::delete('/delnota', [NotasController::class, 'delete']);
+Route::delete('/delnota/{id}', [NotasController::class, 'delete'])->name('delnota');
 
 
 // Rotas de Chamadas
