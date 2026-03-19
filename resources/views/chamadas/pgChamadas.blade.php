@@ -21,21 +21,28 @@
     <?php
     foreach($chamadas as $chamada){
         echo "<tr>";
+        //echo "<td>". $chamada->id . "</td>";
         echo " <td>" . $chamada->DATA_CHAMADA . "</td>";
         echo " <td>" . $chamada->QUANTIDADE_PRESENTES . "</td>";
         echo " <td>" . $chamada->FAIXA_ETARIA_ALUNOS . "</td>";
         echo " <td>" . $chamada->PROFESSOR . "</td>";
         echo " <td>&#x1F589;</td>";
-        echo " <td></td>";
-        echo "</tr>";
-    }
-    ?>
-
-    <form action='{{route("delchamada", "1")}}' method='post'>
+        //echo "<td>" . "<form action='{{route('delchamada', '{{$chamada->id}}')}}' method='post'>{{@csrf}}{{@method('delete')}}
+        // <button class='excluir'>&#x1F5D1;</button>
+        // </form>" . "</td>";
+        echo "<td>ok";?>        
+        <form action="{{route('delchamada', ['id'  => $chamada->id])}}" method='post'>  
         @csrf 
         @method('delete')
         <button class='excluir'>&#x1F5D1;</button>
-    </form>
+        </form>
+        <?php echo "</td>";
 
+        echo "</tr>";
+
+    }
+    ?>
+
+    
 </table>
 @endsection

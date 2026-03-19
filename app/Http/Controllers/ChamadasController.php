@@ -45,7 +45,7 @@ class ChamadasController extends Controller
     public function delete(int $id){
         try{
             echo "id é:" . $id;
-            return redirect('/home_chamadas')->with('msg', 'Chamada excluida com sucesso');
+            return redirect('/home_chamadas')->with('msg', "Chamada $id excluida com sucesso");
         }
         catch(Exception $e){
             return redirect('/home_chamadas')->with('msg', 'Erro ao excluir chamada. Tente novamente mais tarde');
