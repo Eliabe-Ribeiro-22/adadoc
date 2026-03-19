@@ -17,7 +17,7 @@ Route::get('/aluno', [AlunosController::class, 'aluno']);
 // cadastrar novo aluno
 Route::post('/aluno', [AlunosController::class, 'create']);
 // deletar aluno
-Route::delete('/delaluno', [AlunosController::class, 'delete']);
+Route::delete('/delaluno/{id}', [AlunosController::class, 'delete'])->name('delaluno');
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);
