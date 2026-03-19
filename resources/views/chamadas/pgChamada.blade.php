@@ -3,7 +3,7 @@
 @section("titulo", "cadastrar nova chamada")
 @section("corpo")
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
-<form method="POST" action="/chamada">
+<form method="POST" action="/chamada" class="inserir">
 	@csrf
 	<fieldset>
 		<label>Data da chamada</label>	

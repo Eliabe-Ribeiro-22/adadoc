@@ -44,7 +44,8 @@ class ChamadasController extends Controller
 
     public function delete(int $id){
         try{
-            echo "id é:" . $id;
+            
+            Chamada::findOrFail($id)->delete();
             return redirect('/home_chamadas')->with('msg', "Chamada $id excluida com sucesso");
         }
         catch(Exception $e){

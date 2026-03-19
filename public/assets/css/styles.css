@@ -31,7 +31,7 @@ footer{
 }
 
 /*Home_Alunos, Novo Aluno*/
-form{
+form.inserir{
 	background: var(--bg-form);
 	color: var(--font-primary);
 	margin: 0 10vw;

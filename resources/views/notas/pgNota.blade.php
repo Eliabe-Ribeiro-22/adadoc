@@ -10,7 +10,7 @@ foreach ($alunos as $aluno) {
 }
 	
 ?>
-<form method="post" action="/nota">
+<form method="post" action="/nota" class="inserir">
 	@csrf
 	<fieldset>
 		<label for="FAIXA">FAIXA ETARIA</label>

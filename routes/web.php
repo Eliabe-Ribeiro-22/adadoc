@@ -17,7 +17,7 @@ Route::get('/aluno', [AlunosController::class, 'aluno']);
 // cadastrar novo aluno
 Route::post('/aluno', [AlunosController::class, 'create']);
 // deletar aluno
-Route::delete('/aluno', [AlunosController::class, 'delete']);
+Route::delete('/delaluno', [AlunosController::class, 'delete']);
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);
@@ -25,7 +25,7 @@ Route::get('/nota', [NotasController::class, 'nota']);
 //cadastrar nova nota
 Route::post('/nota', [NotasController::class, 'create']);
 // deletar nota
-Route::delete('/nota', [NotasController::class, 'delete']);
+Route::delete('/delnota', [NotasController::class, 'delete']);
 
 
 // Rotas de Chamadas
