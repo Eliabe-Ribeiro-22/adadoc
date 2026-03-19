@@ -26,9 +26,16 @@
         echo " <td>" . $chamada->FAIXA_ETARIA_ALUNOS . "</td>";
         echo " <td>" . $chamada->PROFESSOR . "</td>";
         echo " <td>&#x1F589;</td>";
-        echo " <td><a href='' class='excluir'>&#x1F5D1;</a></td>";
+        echo " <td></td>";
         echo "</tr>";
     }
     ?>
+
+    <form action='{{route("delchamada", "1")}}' method='post'>
+        @csrf 
+        @method('delete')
+        <button class='excluir'>&#x1F5D1;</button>
+    </form>
+
 </table>
 @endsection

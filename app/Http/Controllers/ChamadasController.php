@@ -40,6 +40,16 @@ class ChamadasController extends Controller
         catch(Exception $e){
             return redirect('/home_chamadas')->with('msg', 'Erro ao cadastrar chamada. Tente novamente mais tarde');
         }
+    }
+
+    public function delete(int $id){
+        try{
+            echo "id é:" . $id;
+            return redirect('/home_chamadas')->with('msg', 'Chamada excluida com sucesso');
+        }
+        catch(Exception $e){
+            return redirect('/home_chamadas')->with('msg', 'Erro ao excluir chamada. Tente novamente mais tarde');
+        }
 
     }
 }

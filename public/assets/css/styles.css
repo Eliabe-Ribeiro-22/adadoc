@@ -99,6 +99,6 @@ button.alterar{
 	text-align: center;
 }
 
-a.excluir{
+button.excluir{
 	cursor: pointer;
 }

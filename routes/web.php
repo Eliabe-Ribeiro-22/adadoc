@@ -16,12 +16,16 @@ Route::get('/home_alunos',[AlunosController::class, 'alunos']);
 Route::get('/aluno', [AlunosController::class, 'aluno']);
 // cadastrar novo aluno
 Route::post('/aluno', [AlunosController::class, 'create']);
+// deletar aluno
+Route::delete('/aluno', [AlunosController::class, 'delete']);
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);
 Route::get('/nota', [NotasController::class, 'nota']);
 //cadastrar nova nota
 Route::post('/nota', [NotasController::class, 'create']);
+// deletar nota
+Route::delete('/nota', [NotasController::class, 'delete']);
 
 
 // Rotas de Chamadas
@@ -29,3 +33,5 @@ Route::get('/home_chamadas', [ChamadasController::class, 'chamadas']);
 Route::get('/chamada', [ChamadasController::class, 'chamada']);
 // cadastrar nova chamada
 Route::post('/chamada', [ChamadasController::class, 'create']);
+// Deletar chamada
+Route::delete('/delchamada/{id}', [ChamadasController::class, 'delete'])->name('delchamada');
