@@ -1,5 +1,10 @@
 ## Kanban - ADADOC
 ## TO DO
+- estava com problema de merge do braço dev com main
+  - o codigo resolvedor é:
+  ```
+  git pull origin main --allow-unrelated-histories
+  ```
 - integrar banco de dados
 
 - html através do laravel/php

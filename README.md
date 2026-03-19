@@ -34,3 +34,11 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 ### 13/08 Eliabe
 
 - Criado migrations para tabelas alunos, notas e chamadas em PHP + MySQL
+
+
+## 16/03/2026 - Eliabe
+- Criado funcionalidade de inserção de alunos, notas e chamadas.
+- Criado funcionalidadec de exibição de alunos, notas e chamdas
+
+## 19/03/2026 - Eliabe
+- Criado funcionalidade de exclusão de alunos, notas e chamadas. Rotas + Controladores + view(botão excluir)
