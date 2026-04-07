@@ -80,4 +80,9 @@
 		</div>
 	</fieldset>
 </form>
+<?php 
+	date_default_timezone_set('UTC');
+	echo "A data atual é:" . date("d/m/Y");
+?>
+
 @endsection

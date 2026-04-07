@@ -8,9 +8,7 @@
 	<fieldset>
 		<?php 
 		date_default_timezone_set('UTC');
-		echo date("d/m/Y");
-		echo "<br>";
-		echo date("Y-m-d");
+		echo "A data atual é:" . date("d/m/Y");
 		?>
 
 		

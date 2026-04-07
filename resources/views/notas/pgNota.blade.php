@@ -33,11 +33,19 @@ foreach ($alunos as $aluno) {
 		<input type="number" name="aluno_id" readonly>
 		<label>NOME DO ALUNO</label>
 		<input type="text" name="NOME_ALUNO">
+
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
 
 		filtrando pela faixa etaria escolhida
 		-->
-		<!--<select name="NOME_ALUNO">
+		<?php 
+		echo '<select name="NOME_ALUNO">';
+		foreach ($alunos as $aluno) {
+			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
+		}
+		?>
+
+		<!--
 			 VALUE COM CODIGO  --
 			<option value="1">Elise Ribeiro Mota</option>
 			<option value="2">Elisama Ribeiro Mota</option>
@@ -60,4 +68,9 @@ foreach ($alunos as $aluno) {
 		
 	</fieldset>
 </form>
+<?php 
+	date_default_timezone_set('UTC');
+	echo "A data atual é:" . date("d/m/Y");
+?>
+
 @endsection
