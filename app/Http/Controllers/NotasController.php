@@ -31,8 +31,8 @@ class NotasController extends Controller
             // INSERE DADOS DA NOTA
             $nota = new Nota;
             $nota->FAIXA = $request->FAIXA;
-            $nota->NOME_ALUNO = $request->NOME_ALUNO;
-            $nota->VALOR_NOTA = $request->VALOR_NOTA;
+            $nota->aluno_id = intval($request->aluno_id);
+            $nota->VALOR_NOTA = intval($request->VALOR_NOTA);
             $nota->DATA_NOTA = $request->DATA_NOTA;
 
             // VER outro dia. xuxu

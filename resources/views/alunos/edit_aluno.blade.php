@@ -7,13 +7,6 @@
 <form action="" method="get" class="inserir">
 	@csrf
 	<fieldset>
-		{{$aluno->id}}<br>
-		{{$aluno->NOME_ALUNO}}<br>
-		{{$aluno->FAIXA_ETARIA_ALUNO}}<br>
-		{{$aluno->ENDERECO_ALUNO}}<br>
-		{{$aluno->DATA_NASCIMENTO_ALUNO}}<br>
-		{{$aluno->CELULAR_ALUNO}}<br>
-		{{$aluno->EMAIL_ALUNO}}<br>
 		<label>NOME:</label>
 		<input type="text" name="NOME_ALUNO" value="{{$aluno->NOME_ALUNO}}">
 

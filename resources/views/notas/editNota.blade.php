@@ -55,10 +55,17 @@
 		// caso senior -> pesquisar todos os alunos com a faixa senior
 		?>
 		
-		<label>Id_aluno</label>
-		<input type="number" name="aluno_id">
+		<!-- <label>Id_aluno</label>
+		<input type="number" name="aluno_id"> -->
 		<label>NOME DO ALUNO</label>
-		<input type="text" name="NOME_ALUNO" value="{{$nota->NOME_ALUNO}}">
+		<?php 
+		echo '<select name="NOME_ALUNO">';
+		foreach ($alunos as $aluno) {
+			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
+		}
+		echo "</select>";
+		?>
+		<!-- <input type="text" name="NOME_ALUNO" value="{{$nota->NOME_ALUNO}}"> -->
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
 
 		filtrando pela faixa etaria escolhida

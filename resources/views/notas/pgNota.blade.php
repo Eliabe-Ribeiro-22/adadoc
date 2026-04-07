@@ -29,11 +29,9 @@ foreach ($alunos as $aluno) {
 		// caso senior -> pesquisar todos os alunos com a faixa senior
 		?>
 		
-		<label>Id_aluno</label>
-		<input type="number" name="aluno_id" readonly>
+		<!-- <label>Id_aluno</label>
+		<input type="number" name="aluno_id" readonly> -->
 		<label>NOME DO ALUNO</label>
-		<input type="text" name="NOME_ALUNO">
-
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
 
 		filtrando pela faixa etaria escolhida
@@ -43,16 +41,8 @@ foreach ($alunos as $aluno) {
 		foreach ($alunos as $aluno) {
 			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
 		}
+		echo "</select>";
 		?>
-
-		<!--
-			 VALUE COM CODIGO  --
-			<option value="1">Elise Ribeiro Mota</option>
-			<option value="2">Elisama Ribeiro Mota</option>
-			<option value="3">EZEQUIEL Ribeiro Mota</option>
-			<option value="4">LOHAN Ribeiro Mota</option>
-		</select>
-		-->
 
 		<label>NOTA</label>
 		<input type="number" min="0" max="10" name="VALOR_NOTA">
