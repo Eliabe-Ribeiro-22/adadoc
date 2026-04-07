@@ -13,10 +13,33 @@
 	<fieldset>
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
-			<option value="mirim">MIRIM</option>
-			<option value="adad1">ADAD 1</option>
-			<option value="adad2">ADAD 2</option>
-			<option value="senior">SENIOR</option>
+			<?php if($nota->FAIXA == "mirim"){
+					echo "<option value='mirim' selected>MIRIM</option>";	
+					echo "<option value='adad1'>ADAD 1</option>";
+					echo "<option value='adad2'>ADAD 2</option>";
+					echo "<option value='senior'>SENIOR</option>";
+			}
+			else if($nota->FAIXA == 'adad1'){
+				echo "<option value='mirim'>MIRIM</option>";	
+				echo "<option value='adad1' selected>ADAD 1</option>";
+				echo "<option value='adad2'>ADAD 2</option>";
+				echo "<option value='senior'>SENIOR</option>";
+			}
+			else if($nota->FAIXA == 'adad2'){
+				echo "<option value='mirim'>MIRIM</option>";	
+				echo "<option value='adad1'>ADAD 1</option>";
+				echo "<option value='adad2' selected>ADAD 2</option>";
+				echo "<option value='senior'>SENIOR</option>";
+			}
+			else{
+				echo "<option value='mirim'>MIRIM</option>";	
+				echo "<option value='adad1' selected>ADAD 1</option>";
+				echo "<option value='adad2'>ADAD 2</option>";
+				echo "<option value='senior' selected>SENIOR</option>";
+			}
+			?>
+			
+			
 		</select>
 
 		<?php
