@@ -9,7 +9,8 @@ class AlunosController extends Controller
 {
     // rota principal do site
     public function inicio(){
-        return view("home");
+        $alunos = Aluno::orderBy('NOME_ALUNO')->get();
+        return view("home", ['alunos'=> $alunos]);
     }
 
     public function alunos(){

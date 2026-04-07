@@ -12,11 +12,15 @@
                 <th>Idade</th>
                 <th>Telefone</th>  
             </tr>
-            <tr>
-                <td>Eliabe</td>
-                <td>ADAD SENIOR</td>
-                <td>19</td>
-                <td>049 9 99837-9858</td>
-            </tr>
+               <?php
+    foreach($alunos as $aluno){
+        echo "<tr>";
+        //echo " <td>" . $aluno->id . "</td>";
+        echo " <td>" . $aluno->NOME_ALUNO . "</td>";
+        echo " <td>" . $aluno->FAIXA_ETARIA_ALUNO . "</td>";
+        echo " <td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
+        echo " <td>" . $aluno->CELULAR_ALUNO . "</td></tr>";
+    }
+    ?>
         </table>
 @endsection

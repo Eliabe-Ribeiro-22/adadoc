@@ -1,5 +1,6 @@
 ## Kanban - ADADOC
 ## TO DO
+- dar funcionalidade cancelar ao botão cinza"cancelar"
 - integrar banco de dados
     - editar
 

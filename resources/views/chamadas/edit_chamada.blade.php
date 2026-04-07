@@ -5,33 +5,74 @@
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
 <form method="POST" action="/chamada" class="inserir">
 	@csrf
-	{{$chamada}}
+   
+    
+    
+    
+    
+	
+
+	{{$chamada->FAIXA_ETARIA_ALUNOS}}
 	<fieldset>
+		<label>Código</label>
+		<input type="number" name="id" value="{{$chamada->id}}">
 		<label>Data da chamada</label>	
-		<input type="date" name="DATA_CHAMADA" min="2026-01-01">
+		<input type="date" name="DATA_CHAMADA" min="2026-01-01" value="{{$chamada->DATA_CHAMADA}}">
 
 		<label>Faixa Etária da Turma</label>
 		<select name="FAIXA" id="FAIXA">
-			<option value="MIRIM">MIRIM</option>
-			<option value="ADAD_1">ADAD 1</option>
-			<option value="ADAD_2">ADAD 2</option>
-			<option value="SENIOR">SENIOR</option>
+			<?php 
+			switch ($aluno->FAIXA_ETARIA_ALUNO) {
+					case 'mirim':
+						echo "<option value='mirim' selected>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad1':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1' selected>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad2':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2' selected>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'senior':
+						echo "<option value='mirim'>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior' selected>SENIOR</option>";
+					break;	
+					default:
+						echo "<option value='mirim' selected>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+				}
+			?>
 		</select>
 		
 		<label>DIVISA ATUAL</label>
-		<input type="text" name="DIVISA_CHAMADA">
+		<input type="text" name="DIVISA_CHAMADA" value="{{$chamada->DIVISA_CHAMADA}}
+	">
 		
 		<label>Nome do professor</label>
-		<input type="text" name="PROFESSOR">
+		<input type="text" name="PROFESSOR" value="{{$chamada->PROFESSOR}}
+	">
 
 		<label>Quantidade presentes</label>
-		<input type="number" name="QTDADE_PRESENTES">
+		<input type="number" name="QTDADE_PRESENTES" value="{{$chamada->QUANTIDADE_PRESENTES}}">
 
 		<label>Quantidade ausentes</label>
-		<input type="number" name="QTDADE_AUSENTES">
+		<input type="number" name="QTDADE_AUSENTES" value="{{$chamada->QUANTIDADE_AUSENTES}}"> 
 
 		<label>Quantidade justificadas</label>
-		<input type="number" name="QTDADE_JUSTIFICADAS">
+		<input type="number" name="QTDADE_JUSTIFICADAS" value="{{$chamada->QUANTIDADE_JUSTIFICADAS}}">
 
 
 		<div style="display: flex;">
