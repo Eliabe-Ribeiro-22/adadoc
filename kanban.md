@@ -5,8 +5,6 @@
     - editar
 
 ## DOING
-- home_alunos
-  - table alunos cadastrados em ordem alfabética A-Z
 - home_chamada
   - table chamadas feitas por ordem de data, sendo as mais recentes primeiro
 - home_notas
@@ -21,6 +19,8 @@
   - botão cadastrar nova nota
 
 ## DONE
+- home_alunos
+  - table alunos cadastrados em ordem alfabética A-Z ok
 - integrar banco de dados
     - inserir ok 
     - deletar ok

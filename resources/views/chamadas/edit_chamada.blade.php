@@ -5,14 +5,6 @@
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
 <form method="POST" action="/chamada" class="inserir">
 	@csrf
-   
-    
-    
-    
-    
-	
-
-	{{$chamada->FAIXA_ETARIA_ALUNOS}}
 	<fieldset>
 		<label>Código</label>
 		<input type="number" name="id" value="{{$chamada->id}}">
@@ -22,7 +14,7 @@
 		<label>Faixa Etária da Turma</label>
 		<select name="FAIXA" id="FAIXA">
 			<?php 
-			switch ($aluno->FAIXA_ETARIA_ALUNO) {
+			switch ($chamada->FAIXA_ETARIA_ALUNOS) {
 					case 'mirim':
 						echo "<option value='mirim' selected>MIRIM</option>";
 						echo "<option value='adad1'>ADAD 1</option>";
