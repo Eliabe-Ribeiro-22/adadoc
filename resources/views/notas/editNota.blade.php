@@ -3,11 +3,7 @@
 @section("titulo", "cadastrar nova nota")
 @section("corpo")
 <h1 class="color-secundary">Alterar nova nota</h1>
-	{{ $nota->id }}<br> 
-	{{ $nota->FAIXA }}<br> 
-	{{ $nota->NOME_ALUNO }}<br>  
-	{{ $nota->VALOR_NOTA }}<br> 
-	{{ $nota->DATA_NOTA }}<br>                        
+
 <form method="get" action="" class="inserir">
 	@csrf
 	<fieldset>

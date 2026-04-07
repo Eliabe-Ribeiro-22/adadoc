@@ -24,7 +24,11 @@
         echo " <td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
         echo " <td>" . $aluno->CELULAR_ALUNO . "</td>";
         echo " <td>" . $aluno->ENDERECO_ALUNO . "</td>";
-        echo " <td>&#x1F589;</td>";
+        echo " <td>"?>
+        <a href="{{route('edit_aluno', ['id' => $aluno->id])}}">&#x1F589;</a>
+        
+        <?php
+        echo "</td>";
         echo " <td>";
         ?>
         <form method="post" action="{{ route('delaluno', ['id' => $aluno->id]) }}">

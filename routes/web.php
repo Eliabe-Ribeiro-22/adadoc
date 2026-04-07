@@ -18,7 +18,7 @@ Route::get('/aluno', [AlunosController::class, 'aluno']);
 Route::post('/aluno', [AlunosController::class, 'create']);
 // deletar aluno
 Route::delete('/delaluno/{id}', [AlunosController::class, 'delete'])->name('delaluno');
-Route::get('/edit_aluno/{id}', [AlunosController::class, 'edit']);
+Route::get('/edit_aluno/{id}', [AlunosController::class, 'edit'])->name('edit_aluno');
 
 // Rotas de Notas
 Route::get('/home_notas', [NotasController::class, 'notas']);

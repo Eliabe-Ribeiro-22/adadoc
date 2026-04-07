@@ -55,6 +55,15 @@ class AlunosController extends Controller
         }catch(Exception $e){
             return redirect('/home_alunos')->with('msg', 'Erro ao deletar aluno. Tente novamente mais tarde');
         }
+    }
 
+    public function edit(int $id){
+        try{
+            $aluno = ALuno::FindOrFail($id);
+            return view('alunos.edit_aluno', ['aluno' => $aluno]);
+        }catch(Exception $e){
+            return redirect('/home_alunos')->with('msg', 'Erro ao exibir o aluno a ser editado');
+        }
+        
     }
 }
