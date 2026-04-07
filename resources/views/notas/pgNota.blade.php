@@ -39,7 +39,7 @@ foreach ($alunos as $aluno) {
 		<?php 
 		echo '<select name="NOME_ALUNO">';
 		foreach ($alunos as $aluno) {
-			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
+			echo "<option value='". $aluno->aluno_id . "'>". $aluno->NOME_ALUNO . "</option>";
 		}
 		echo "</select>";
 		?>

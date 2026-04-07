@@ -8,6 +8,7 @@
   - table notas de alunos por ordem de data, sendo as mais recentes -->
 <table>
     <tr>
+        <th>Código</th>
         <th>DATA</th>
         <th>NOTA</th>
         <th>FAIXA ETARIA</th>
@@ -19,12 +20,18 @@
     <?php  
     foreach ($notas as $nota) {
         echo "<tr>";
-        //echo "<td>" . $nota->id . "</td>";
+        echo "<td>" . $nota->id . "</td>";
         echo "<td>" . $nota->DATA_NOTA . "</td>";
         echo "<td>" . $nota->VALOR_NOTA . "</td>";
         echo "<td>" . $nota->FAIXA . "</td>";
-        echo "<td>" . $nota->NOME_ALUNO . "</td>";        
-        echo '<td>';?> <a href="{{route('edit_nota', $nota->id)}}">&#x1F589;</a></td>
+        echo "<td>" . $nota->aluno_id . "</td>";        
+        echo '<td>';?> <a href="{{
+                                route('edit_nota', [
+                                                    'id_nota' => $nota->id, 
+                                                    'aluno_id' => $nota->aluno_id
+                                                    ]
+                                    )
+                                }}">&#x1F589;</a></td>
         <?php
         echo "<td>";
     ?>

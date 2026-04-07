@@ -54,10 +54,11 @@ class NotasController extends Controller
              return redirect('/home_notas')->with('msg', 'Erro ao excluir nota. Tente novamente mais tarde');
         }
     }
-    public function edit(int $id){
+    public function edit($id_nota, $aluno_id){
             try{
-                $nota = Nota::findOrFail($id);
-                return view('notas.editNota', ['nota' => $nota]);
+                $nota = Nota::findOrFail($id_nota);
+                $aluno = Aluno::findOrFail($aluno_id);
+                return view('notas.editNota', ['nota' => $nota, 'aluno' => $aluno]);
 
             }catch(Exception $e){
                     return redirect('/home_notas')->with('msg', 'Erro ao exibir aluno editar');

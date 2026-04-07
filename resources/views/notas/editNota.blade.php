@@ -58,13 +58,9 @@
 		<!-- <label>Id_aluno</label>
 		<input type="number" name="aluno_id"> -->
 		<label>NOME DO ALUNO</label>
-		<?php 
-		echo '<select name="NOME_ALUNO">';
-		foreach ($alunos as $aluno) {
-			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
-		}
-		echo "</select>";
-		?>
+		<select name="NOME_ALUNO">';
+			<option value="{{$nota->aluno_id}}">{{$aluno->NOME_ALUNO}}</option>
+		</select>
 		<!-- <input type="text" name="NOME_ALUNO" value="{{$nota->NOME_ALUNO}}"> -->
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
 

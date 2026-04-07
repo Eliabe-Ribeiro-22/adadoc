@@ -7,7 +7,8 @@
   - table alunos cadastrados em ordem alfabética A-Z -->
 <table>
     <tr>
-	    <th>Nome</th>
+	    <th>Código</th>
+        <th>Nome</th>
     	<th>Faixa Etária</th>
         <th>Idade</th>
         <th>Telefone</th>
@@ -18,7 +19,7 @@
     <?php
     foreach($alunos as $aluno){
         echo "<tr>";
-        //echo " <td>" . $aluno->id . "</td>";
+        echo " <td>" . $aluno->id . "</td>";
         echo " <td>" . $aluno->NOME_ALUNO . "</td>";
         echo " <td>" . $aluno->FAIXA_ETARIA_ALUNO . "</td>";
         echo " <td>" . $aluno->DATA_NASCIMENTO_ALUNO . "</td>";
