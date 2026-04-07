@@ -19,12 +19,13 @@
     <?php  
     foreach ($notas as $nota) {
         echo "<tr>";
-        //echo "<td>" . $nota->id . "</td>";
+        echo "<td>" . $nota->id . "</td>";
         echo "<td>" . $nota->DATA_NOTA . "</td>";
         echo "<td>" . $nota->VALOR_NOTA . "</td>";
         echo "<td>" . $nota->FAIXA . "</td>";
         echo "<td>" . $nota->NOME_ALUNO . "</td>";        
-        echo "<td>&#x1F589;</td>";
+        echo '<td>';?> <a href="{{route('edit_nota', $nota->id)}}">&#x1F589;</a></td>
+        <?php
         echo "<td>";
     ?>
     
@@ -34,37 +35,8 @@
         <button class='excluir'>&#x1F5D1;</button></td>
     </form>
     </tr>
-    
-
     <?php
     }
     ?>
-    
-    <!-- <tr>
-        <td>11/11/2025</td>
-        <td>9,75</td>
-        <td>ADAD 2</td>
-        <td>JOSE PEDRO</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
-
-    <tr>
-        <td>09/11/2025</td>
-        <td>9,9</td>
-        <td>ADAD 1</td>
-        <td>LOHAN</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr>
-
-    <tr>
-        <td>02/11/2025</td>
-        <td>10</td>
-        <td>ADAD MIRIM</td>
-        <td>ELISE</td>
-        <td>&#x1F589;</td>
-        <td>&#x1F5D1;</td>
-    </tr> -->
 </table>
 @endsection
