@@ -7,8 +7,15 @@
 <form action="/aluno" method="POST" class="inserir">
 	@csrf
 	<fieldset>
+		{{$aluno->id}}<br>
+		{{$aluno->NOME_ALUNO}}<br>
+		{{$aluno->FAIXA_ETARIA_ALUNO}}<br>
+		{{$aluno->ENDERECO_ALUNO}}<br>
+		{{$aluno->DATA_NASCIMENTO_ALUNO}}<br>
+		{{$aluno->CELULAR_ALUNO}}<br>
+		{{$aluno->EMAIL_ALUNO}}<br>
 		<label>NOME:</label>
-		<input type="text" name="NOME_ALUNO">
+		<input type="text" name="NOME_ALUNO" value="{{$aluno->NOME_ALUNO}}">
 
 		<label>FAIXA ETARIA:</label>
 		
@@ -21,18 +28,18 @@
 		
 
 		<label>ENDERECO:</label>
-		<input type="text" name="ENDERECO_ALUNO">
+		<input type="text" name="ENDERECO_ALUNO" value="{{$aluno->ENDERECO_ALUNO}}">
 		
 		<label>DATA DE NASCIMENTO:</label>
-		<input type="date" name="DATA_NASCIMENTO_ALUNO">
+		<input type="date" name="DATA_NASCIMENTO_ALUNO" value="{{$aluno->DATA_NASCIMENTO_ALUNO}}">
 
 
 		<label>CELULAR:</label>
-		<input type="tel" name="CELULAR_ALUNO" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="49 91111-1111">
+		<input type="tel" name="CELULAR_ALUNO" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="49 91111-1111" value="{{$aluno->CELULAR_ALUNO}}">
 		
 
 		<label>EMAIL:</label>
-		<input type="email" name="EMAIL_ALUNO">
+		<input type="email" name="EMAIL_ALUNO" value="{{$aluno->EMAIL_ALUNO}}">
 		
 		<div style="display: flex;">
 			<button class="salvar">Salvar</button>
