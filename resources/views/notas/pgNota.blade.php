@@ -30,7 +30,7 @@ foreach ($alunos as $aluno) {
 		?>
 		
 		<label>Id_aluno</label>
-		<input type="number" name="aluno_id">
+		<input type="number" name="aluno_id" readonly>
 		<label>NOME DO ALUNO</label>
 		<input type="text" name="NOME_ALUNO">
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 

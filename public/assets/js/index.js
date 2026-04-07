@@ -5,8 +5,10 @@
 alert("entrou aqui");
 
 
-var hoje = new Date();
-
+//var hoje = new Date();
+var hoje = Date.now();
+alert(hoje);
+console.log(hoje)
 
 //alert(hoje3);
 //console.log(hoje3);

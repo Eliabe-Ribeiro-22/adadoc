@@ -11,7 +11,7 @@
 			type="date" 
 			name="DATA_CHAMADA"
 			min="2026-01-01" 
-			disabled 
+			readonly 
 			id="DATA_CHAMADA"
 		>
 		<!-- sempre a chamada será com data atual do sistema -->

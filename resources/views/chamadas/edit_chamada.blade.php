@@ -13,7 +13,7 @@
 				name="DATA_CHAMADA" 
 				min="2026-01-01" 
 				value="{{$chamada->DATA_CHAMADA}}" 
-				
+				readonly 
 				id="DATA_CHAMADA"
 
 		>
