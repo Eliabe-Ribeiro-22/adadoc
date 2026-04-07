@@ -13,10 +13,10 @@
 		<label>FAIXA ETARIA:</label>
 		
 		<select name="FAIXA" id="FAIXA">
-			<option value="MIRIM">MIRIM</option>
-			<option value="ADAD_1">ADAD 1</option>
-			<option value="ADAD_2">ADAD 2</option>
-			<option value="SENIOR">SENIOR</option>
+			<option value="mirim">MIRIM</option>
+			<option value="adad1">ADAD 1</option>
+			<option value="adad2">ADAD 2</option>
+			<option value="senior">SENIOR</option>
 		</select>
 		
 

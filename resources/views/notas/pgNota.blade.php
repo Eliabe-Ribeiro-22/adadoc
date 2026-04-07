@@ -7,6 +7,7 @@
 foreach ($alunos as $aluno) {
 	echo $aluno->id ."<br>";
 	echo $aluno->NOME_ALUNO ."<br>";
+	echo $aluno->FAIXA_ETARIA_ALUNO . "<br>";
 }
 	
 ?>

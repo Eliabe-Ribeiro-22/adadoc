@@ -26,8 +26,17 @@
         echo " <td>" . $chamada->QUANTIDADE_PRESENTES . "</td>";
         echo " <td>" . $chamada->FAIXA_ETARIA_ALUNOS . "</td>";
         echo " <td>" . $chamada->PROFESSOR . "</td>";
-        echo " <td>&#x1F589;</td>";
+        echo " <td>";?>
+        <!-- editar -->
+        <a href="{{route('edit_chamada', ['id' => $chamada->id])}}">
+            &#x1F589;
+        </a>
+    </td>   
+        
+
+        <?php
         echo "<td>";?>        
+            <!-- deletar -->
         <form action="{{route('delchamada', ['id'  => $chamada->id])}}" method='post'>  
         @csrf 
         @method('delete')

@@ -19,7 +19,7 @@
     <?php  
     foreach ($notas as $nota) {
         echo "<tr>";
-        echo "<td>" . $nota->id . "</td>";
+        //echo "<td>" . $nota->id . "</td>";
         echo "<td>" . $nota->DATA_NOTA . "</td>";
         echo "<td>" . $nota->VALOR_NOTA . "</td>";
         echo "<td>" . $nota->FAIXA . "</td>";

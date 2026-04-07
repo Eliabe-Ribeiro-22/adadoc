@@ -4,7 +4,7 @@
 @section("corpo")
 <h1 class="color-secundary">Cadastrar novo aluno</h1>
 <a href="/">Voltar ao início</a>
-<form action="/aluno" method="POST" class="inserir">
+<form action="" method="get" class="inserir">
 	@csrf
 	<fieldset>
 		{{$aluno->id}}<br>
@@ -20,10 +20,41 @@
 		<label>FAIXA ETARIA:</label>
 		
 		<select name="FAIXA" id="FAIXA">
-			<option value="MIRIM">MIRIM</option>
-			<option value="ADAD_1">ADAD 1</option>
-			<option value="ADAD_2">ADAD 2</option>
-			<option value="SENIOR">SENIOR</option>
+			<?php 
+			switch ($aluno->FAIXA_ETARIA_ALUNO) {
+					case 'mirim':
+						echo "<option value='mirim' selected>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad1':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1' selected>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad2':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2' selected>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'senior':
+						echo "<option value='mirim'>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior' selected>SENIOR</option>";
+					break;	
+					default:
+						echo "<option value='mirim' selected>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+				}
+			?>
+			
 		</select>
 		
 

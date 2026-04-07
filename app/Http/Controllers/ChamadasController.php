@@ -53,4 +53,16 @@ class ChamadasController extends Controller
         }
 
     }
+
+    public function edit(int $id){
+        try{
+            $chamada = Chamada::findOrFail($id);
+            return view('chamadas.edit_chamada', ['chamada' => $chamada]);
+
+        }catch(Exception $e){
+            return redirect('/home_chamadas')->with('msg', 'Erro ao exibir dados a serem editados na chamada');
+        }
+
+    }
+
 }
