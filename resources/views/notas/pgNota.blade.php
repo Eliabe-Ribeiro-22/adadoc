@@ -37,9 +37,10 @@ foreach ($alunos as $aluno) {
 		filtrando pela faixa etaria escolhida
 		-->
 		<?php 
+		// relacionamento entre tabelas + inner join
 		echo '<select name="NOME_ALUNO">';
 		foreach ($alunos as $aluno) {
-			echo "<option value='". $aluno->aluno_id . "'>". $aluno->NOME_ALUNO . "</option>";
+			echo "<option value='". $nota->aluno_id . "'>". $aluno->NOME_ALUNO . "</option>";
 		}
 		echo "</select>";
 		?>
