@@ -73,7 +73,7 @@
 		<input type="email" name="EMAIL_ALUNO" value="{{$aluno->EMAIL_ALUNO}}">
 		
 		<div style="display: flex;">
-			<button class="salvar">Salvar</button>
+			<button class="salvar">Alterar</button>
 			<button class="cancelar">Cancelar</button>	
 		</div>
 		

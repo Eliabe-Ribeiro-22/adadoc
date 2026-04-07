@@ -7,7 +7,15 @@
 	@csrf
 	<fieldset>
 		<label>Data da chamada</label>	
-		<input type="date" name="DATA_CHAMADA" min="2026-01-01">
+		<input 
+			type="date" 
+			name="DATA_CHAMADA"
+			min="2026-01-01" 
+			disabled 
+			id="DATA_CHAMADA"
+		>
+		<!-- sempre a chamada será com data atual do sistema -->
+
 
 		<label>Faixa Etária da Turma</label>
 		<select name="FAIXA" id="FAIXA">
@@ -21,7 +29,7 @@
 		<input type="text" name="DIVISA_CHAMADA">
 		
 		<label>Nome do professor</label>
-		<input type="text" name="PROFESSOR">
+		<input type="text" name="PROFESSOR" id="professor">
 
 		<label>Quantidade presentes</label>
 		<input type="number" name="QTDADE_PRESENTES">
@@ -39,4 +47,7 @@
 		</div>
 	</fieldset>
 </form>
+<!-- JS -->
+<script type="text/javascript" src="/assets/js/index.js"></script>
+
 @endsection

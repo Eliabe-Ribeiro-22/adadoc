@@ -80,7 +80,7 @@
 		<input type="date" name="DATA_NOTA" value="{{$nota->DATA_NOTA}}">
 		
 		<div style="display: flex;">
-			<button class="salvar">Salvar</button>
+			<button class="salvar">Alterar</button>
 			<button class="cancelar">Cancelar</button>	
 		</div>
 		

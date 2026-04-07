@@ -3,14 +3,21 @@
 @section("titulo", "cadastrar nova chamada")
 @section("corpo")
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
-<form method="POST" action="/chamada" class="inserir">
+<form method="get" action="" class="inserir">
 	@csrf
 	<fieldset>
 		<label>Código</label>
 		<input type="number" name="id" value="{{$chamada->id}}">
 		<label>Data da chamada</label>	
-		<input type="date" name="DATA_CHAMADA" min="2026-01-01" value="{{$chamada->DATA_CHAMADA}}">
+		<input type="date" 
+				name="DATA_CHAMADA" 
+				min="2026-01-01" 
+				value="{{$chamada->DATA_CHAMADA}}" 
+				
+				id="DATA_CHAMADA"
 
+		>
+		
 		<label>Faixa Etária da Turma</label>
 		<select name="FAIXA" id="FAIXA">
 			<?php 
@@ -68,7 +75,7 @@
 
 
 		<div style="display: flex;">
-			<button class="salvar">Salvar</button>
+			<button class="salvar">Alterar</button>
 			<button class="cancelar">Cancelar</button>	
 		</div>
 	</fieldset>
