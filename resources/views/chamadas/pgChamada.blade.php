@@ -6,13 +6,24 @@
 <form method="POST" action="/chamada" class="inserir">
 	@csrf
 	<fieldset>
+		<?php 
+		date_default_timezone_set('UTC');
+		echo date("d/m/Y");
+		echo "<br>";
+		echo date("Y-m-d");
+		?>
+
+		
 		<label>Data da chamada</label>	
+		<!-- data atual do sistema -->
 		<input 
 			type="date" 
 			name="DATA_CHAMADA"
 			min="2026-01-01" 
 			readonly 
 			id="DATA_CHAMADA"
+
+			value="<?php echo date("Y-m-d");?>" 
 		>
 		<!-- sempre a chamada será com data atual do sistema -->
 
