@@ -94,7 +94,11 @@
 
 ## **Sprint 4**
 - html através do laravel/php
-- integrar banco de dados 
+- integrar banco de dados
+    - inserir
+    - deletar
+    - selecionar
+    - editar 
 
 
 ## **SPRINT 5**

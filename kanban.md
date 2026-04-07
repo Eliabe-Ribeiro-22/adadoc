@@ -1,12 +1,7 @@
 ## Kanban - ADADOC
 ## TO DO
 - integrar banco de dados
-
-- html através do laravel/php
-  - alunos - ok
-  - chamadas
-  - notas
-
+    - editar
 
 ## DOING
 - home_alunos
@@ -23,7 +18,19 @@
   - botão fazer nova chamada 
 - home_notas
   - botão cadastrar nova nota
+
 ## DONE
+- integrar banco de dados
+    - inserir ok 
+    - deletar ok
+    - selecionar ok
+    - editar
+
+- html através do laravel/php
+  - alunos - ok
+  - chamadas - ok 
+  - notas - ok 
+
 - fazer SQL de alunos, chamadas e notas.
 
 - SQL chamadas, alunos, notas: 

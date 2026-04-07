@@ -8,35 +8,45 @@
 	{{ $nota->NOME_ALUNO }}<br>  
 	{{ $nota->VALOR_NOTA }}<br> 
 	{{ $nota->DATA_NOTA }}<br>                        
-<form method="post" action="/nota" class="inserir">
+<form method="get" action="" class="inserir">
 	@csrf
 	<fieldset>
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
-			<?php if($nota->FAIXA == "mirim"){
-					echo "<option value='mirim' selected>MIRIM</option>";	
-					echo "<option value='adad1'>ADAD 1</option>";
-					echo "<option value='adad2'>ADAD 2</option>";
-					echo "<option value='senior'>SENIOR</option>";
-			}
-			else if($nota->FAIXA == 'adad1'){
-				echo "<option value='mirim'>MIRIM</option>";	
-				echo "<option value='adad1' selected>ADAD 1</option>";
-				echo "<option value='adad2'>ADAD 2</option>";
-				echo "<option value='senior'>SENIOR</option>";
-			}
-			else if($nota->FAIXA == 'adad2'){
-				echo "<option value='mirim'>MIRIM</option>";	
-				echo "<option value='adad1'>ADAD 1</option>";
-				echo "<option value='adad2' selected>ADAD 2</option>";
-				echo "<option value='senior'>SENIOR</option>";
-			}
-			else{
-				echo "<option value='mirim'>MIRIM</option>";	
-				echo "<option value='adad1' selected>ADAD 1</option>";
-				echo "<option value='adad2'>ADAD 2</option>";
-				echo "<option value='senior' selected>SENIOR</option>";
-			}
+
+			<?php 
+				switch ($nota->FAIXA) {
+					case 'mirim':
+						echo "<option value='mirim' selected>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad1':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1' selected>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'adad2':
+						echo "<option value='mirim'>MIRIM</option>";
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2' selected>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+					case 'senior':
+						echo "<option value='mirim'>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior' selected>SENIOR</option>";
+					break;	
+					default:
+						echo "<option value='mirim' selected>MIRIM</option>";	
+						echo "<option value='adad1'>ADAD 1</option>";
+						echo "<option value='adad2'>ADAD 2</option>";
+						echo "<option value='senior'>SENIOR</option>";
+						break;
+				}
 			?>
 			
 			

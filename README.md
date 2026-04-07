@@ -34,3 +34,6 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 ### 13/08 Eliabe
 
 - Criado migrations para tabelas alunos, notas e chamadas em PHP + MySQL
+
+### 07-04 Eliabe
+- Criado rota, função no Controller e view para exibir dados a serem editados de notas
