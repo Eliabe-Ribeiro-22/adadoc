@@ -9,7 +9,7 @@
 	@method('PUT')
 	<fieldset>
 		<label>Código</label>
-		<input type="number" name="id" value="{{$nota->id}}">
+		<input type="number" name="id" value="{{$nota->id}}" readonly>
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
 
@@ -61,8 +61,8 @@
 		<!-- <label>Id_aluno</label>
 		<input type="number" name="aluno_id"> -->
 		<label>NOME DO ALUNO</label>
-		<select name="NOME_ALUNO">';
-			<option value="{{$aluno->aluno_id}}">{{$aluno->NOME_ALUNO}}</option>
+		<select name="ALUNO_ID">';
+			<option value="{{$aluno->id}}">{{$aluno->NOME_ALUNO}}</option>
 		</select>
 		<!-- <input type="text" name="NOME_ALUNO" value="{{$nota->NOME_ALUNO}}"> -->
 		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
