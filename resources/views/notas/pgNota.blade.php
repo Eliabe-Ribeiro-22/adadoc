@@ -14,6 +14,9 @@ foreach ($alunos as $aluno) {
 <form method="post" action="/nota" class="inserir">
 	@csrf
 	<fieldset>
+		<label>Código</label>
+		<input type="number" name="id" value="0">
+
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
 			<option value="mirim" selected>MIRIM</option>
@@ -40,7 +43,7 @@ foreach ($alunos as $aluno) {
 		// relacionamento entre tabelas + inner join
 		echo '<select name="NOME_ALUNO">';
 		foreach ($alunos as $aluno) {
-			echo "<option value='". $nota->aluno_id . "'>". $aluno->NOME_ALUNO . "</option>";
+			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
 		}
 		echo "</select>";
 		?>

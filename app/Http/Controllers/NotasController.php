@@ -21,9 +21,10 @@ class NotasController extends Controller
     }
 
     public function nota(){
+        $nota = 0;
         $alunos = Aluno::orderBy('NOME_ALUNO')->get();
 
-        return view('notas.pgNota',['alunos' => $alunos]);
+        return view('notas.pgNota',['alunos' => $alunos, 'nota' => $nota]);
     }
 
     public function create(Request $request){
@@ -58,6 +59,7 @@ class NotasController extends Controller
             try{
                 $nota = Nota::findOrFail($id_nota);
                 //$aluno = Aluno::findOrFail($aluno_id);
+                // chuchu nota aluno padrão =1 + #numero aleatorio no chuchu aqui
                 $aluno = Aluno::findOrFail(1);
                 return view('notas.editNota', ['nota' => $nota, 'aluno' => $aluno]);
 
@@ -66,8 +68,13 @@ class NotasController extends Controller
             }
     }
 
-    public function update(){
+    public function update(Request $request){
         try{
+            $data = $request->all();
+            // pesquisa pelo id 
+            Nota::findOrFail($request->id)
+            // altera com os novos dados da requisição
+            ->update($data);   
             return redirect('/home_notas')->with('msg', 'Sucesso ao editar nota');
         }catch(Exception $e){
             return redirect('/home_notas')->with('msg','Erro ao editar nota. Tente novamente mais tarde');

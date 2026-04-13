@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('notas', function (Blueprint $table){
             $table->id();
             $table->string('FAIXA');
-            $table->integer('aluno_id');
+            $table->foreignId('aluno_id')->constrained();
             // PEGAR O CODIGO PARA DESCOBRIR O NOME DO ALUNO, SEM INTERACAO DO USUARIO VISANDO EVITAR ERROS
             $table->integer('VALOR_NOTA');
             $table->date('DATA_NOTA');
