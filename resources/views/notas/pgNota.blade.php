@@ -15,7 +15,7 @@ foreach ($alunos as $aluno) {
 	@csrf
 	<fieldset>
 		<label>Código</label>
-		<input type="number" name="id" value="0">
+		<input type="number" name="id" value="0" readonly>
 
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
@@ -32,16 +32,9 @@ foreach ($alunos as $aluno) {
 		// caso senior -> pesquisar todos os alunos com a faixa senior
 		?>
 		
-		<!-- <label>Id_aluno</label>
-		<input type="number" name="aluno_id" readonly> -->
 		<label>NOME DO ALUNO</label>
-		<!-- gerar dinamicamente o select com option de todos os alunos cadastrados em ordem alfabetica 
-
-		filtrando pela faixa etaria escolhida
-		-->
 		<?php 
-		// relacionamento entre tabelas + inner join
-		echo '<select name="NOME_ALUNO">';
+		echo '<select name="ALUNO_ID">';
 		foreach ($alunos as $aluno) {
 			echo "<option value='". $aluno->id . "'>". $aluno->NOME_ALUNO . "</option>";
 		}

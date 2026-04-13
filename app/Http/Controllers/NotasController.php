@@ -32,13 +32,11 @@ class NotasController extends Controller
             // INSERE DADOS DA NOTA
             $nota = new Nota;
             $nota->FAIXA = $request->FAIXA;
-            $nota->aluno_id = intval($request->aluno_id);
+            $nota->aluno_id = intval($request->ALUNO_ID);
             $nota->VALOR_NOTA = intval($request->VALOR_NOTA);
             $nota->DATA_NOTA = $request->DATA_NOTA;
 
-            // VER outro dia. xuxu
-           // $nota->aluno_id = $request->aluno_id;
-            
+
             //SALVA NO BANCO
             $nota->save();
             return redirect('/home_notas')->with('msg', 'Nota cadastrada com sucesso');
