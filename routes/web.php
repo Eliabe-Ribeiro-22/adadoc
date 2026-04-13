@@ -28,6 +28,7 @@ Route::post('/nota', [NotasController::class, 'create']);
 // deletar nota
 Route::delete('/delnota/{id}', [NotasController::class, 'delete'])->name('delnota');
 Route::get('/edit_nota/{id_nota}/{aluno_id}', [NotasController::class, 'edit'])->name('edit_nota');
+Route::put('/update_nota',[NotasController::class, 'update'])->name('update_nota');
 
 // Rotas de Chamadas
 Route::get('/home_chamadas', [ChamadasController::class, 'chamadas']);

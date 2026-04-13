@@ -4,8 +4,9 @@
 @section("corpo")
 <h1 class="color-secundary">Alterar nova nota</h1>
 
-<form method="get" action="" class="inserir">
+<form method="post" action="{{route('update_nota')}}" class="inserir">
 	@csrf
+	@method('PUT')
 	<fieldset>
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
