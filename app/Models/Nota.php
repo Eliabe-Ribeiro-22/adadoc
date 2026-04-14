@@ -15,4 +15,5 @@ class Nota extends Model
   //];
   protected $dates = ['DATA_NOTA'];
   protected $guarded = [];
+  protected $fillable = [];
 }

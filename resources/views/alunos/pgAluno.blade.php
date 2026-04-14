@@ -15,7 +15,7 @@
 
 		<label>FAIXA ETARIA:</label>
 		
-		<select name="FAIXA" id="FAIXA">
+		<select name="FAIXA_ETARIA_ALUNO" id="FAIXA">
 			<option value="mirim">MIRIM</option>
 			<option value="adad1">ADAD 1</option>
 			<option value="adad2">ADAD 2</option>

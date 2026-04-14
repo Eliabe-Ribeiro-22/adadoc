@@ -35,7 +35,7 @@ class AlunosController extends Controller
         try{
             $aluno = new Aluno;
             $aluno->NOME_ALUNO = $request->NOME_ALUNO;
-            $aluno->FAIXA_ETARIA_ALUNO = $request->FAIXA;
+            $aluno->FAIXA_ETARIA_ALUNO = $request->FAIXA_ETARIA_ALUNO;
             $aluno->ENDERECO_ALUNO = $request->ENDERECO_ALUNO;
             $aluno->DATA_NASCIMENTO_ALUNO = $request->DATA_NASCIMENTO_ALUNO;
             $aluno->CELULAR_ALUNO = $request->CELULAR_ALUNO;

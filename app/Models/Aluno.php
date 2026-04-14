@@ -13,6 +13,7 @@ class Aluno extends Model
    // protected $cast = [
    // 'items' => 'array'
   //];
-  protected $dates = [];
+  protected $dates = ['DATA_NASCIMENTO_ALUNO'];
   protected $guarded = [];
+  protected $fillable = [];
 }

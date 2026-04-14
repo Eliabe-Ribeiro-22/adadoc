@@ -4,8 +4,9 @@
 @section("corpo")
 <h1 class="color-secundary">Cadastrar novo aluno</h1>
 <a href="/">Voltar ao início</a>
-<form action="" method="get" class="inserir">
+<form action="{{route('update_aluno')}}" method="post" class="inserir">
 	@csrf
+	@method('PUT')
 	<fieldset>
 		<label>Código</label>
 		<input type="number" name="id" value="{{$aluno->id}}" readonly>
@@ -15,7 +16,7 @@
 
 		<label>FAIXA ETARIA:</label>
 		
-		<select name="FAIXA" id="FAIXA">
+		<select name="FAIXA_ETARIA_ALUNO" id="FAIXA">
 			<?php 
 			switch ($aluno->FAIXA_ETARIA_ALUNO) {
 					case 'mirim':
