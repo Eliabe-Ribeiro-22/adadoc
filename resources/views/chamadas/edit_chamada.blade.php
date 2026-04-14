@@ -3,8 +3,9 @@
 @section("titulo", "cadastrar nova chamada")
 @section("corpo")
 <h1 class="color-secundary">Cadastrar nova chamada</h1>
-<form method="get" action="" class="inserir">
+<form method="POST" action="{{route('update_chamada')}}" class="inserir">
 	@csrf
+	@method('PUT')
 	<fieldset>
 		<label>Código</label>
 		<input type="number" name="id" value="{{$chamada->id}}">
@@ -65,13 +66,13 @@
 	">
 
 		<label>Quantidade presentes</label>
-		<input type="number" name="QTDADE_PRESENTES" value="{{$chamada->QUANTIDADE_PRESENTES}}">
+		<input type="number" name="QUANTIDADE_PRESENTES" value="{{$chamada->QUANTIDADE_PRESENTES}}">
 
 		<label>Quantidade ausentes</label>
-		<input type="number" name="QTDADE_AUSENTES" value="{{$chamada->QUANTIDADE_AUSENTES}}"> 
+		<input type="number" name="QUANTIDADE_AUSENTES" value="{{$chamada->QUANTIDADE_AUSENTES}}"> 
 
 		<label>Quantidade justificadas</label>
-		<input type="number" name="QTDADE_JUSTIFICADAS" value="{{$chamada->QUANTIDADE_JUSTIFICADAS}}">
+		<input type="number" name="QUANTIDADE_JUSTIFICADAS" value="{{$chamada->QUANTIDADE_JUSTIFICADAS}}">
 
 
 		<div style="display: flex;">

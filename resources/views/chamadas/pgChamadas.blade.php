@@ -9,7 +9,7 @@
 <table>
     <tr>
         <th>DATA</th>
-        <th>QTDADE ALUNOS</th>
+        <th>QUANTIDADE ALUNOS</th>
         <th>FAIXA ETÁRIA</th>
         <th>PROFESSOR</th>
 	    <th>Editar</th>

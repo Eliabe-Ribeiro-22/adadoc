@@ -41,13 +41,13 @@
 		<input type="text" name="PROFESSOR" id="professor">
 
 		<label>Quantidade presentes</label>
-		<input type="number" name="QTDADE_PRESENTES">
+		<input type="number" name="QUANTIDADE_PRESENTES">
 
 		<label>Quantidade ausentes</label>
-		<input type="number" name="QTDADE_AUSENTES">
+		<input type="number" name="QUANTIDADE_AUSENTES">
 
 		<label>Quantidade justificadas</label>
-		<input type="number" name="QTDADE_JUSTIFICADAS">
+		<input type="number" name="QUANTIDADE_JUSTIFICADAS">
 
 
 		<div style="display: flex;">

@@ -29,9 +29,9 @@ class ChamadasController extends Controller
             $chamada->FAIXA_ETARIA_ALUNOS = $request->FAIXA;
             $chamada->DIVISA_CHAMADA = $request->DIVISA_CHAMADA;
             $chamada->PROFESSOR = $request->PROFESSOR;
-            $chamada->QUANTIDADE_PRESENTES = $request->QTDADE_PRESENTES;
-            $chamada->QUANTIDADE_AUSENTES = $request->QTDADE_AUSENTES;
-            $chamada->QUANTIDADE_JUSTIFICADAS = $request->QTDADE_JUSTIFICADAS;
+            $chamada->QUANTIDADE_PRESENTES = $request->QUANTIDADE_PRESENTES;
+            $chamada->QUANTIDADE_AUSENTES = $request->QUANTIDADE_AUSENTES;
+            $chamada->QUANTIDADE_JUSTIFICADAS = $request->QUANTIDADE_JUSTIFICADAS;
 
             $chamada->save();
 
@@ -62,7 +62,16 @@ class ChamadasController extends Controller
         }catch(Exception $e){
             return redirect('/home_chamadas')->with('msg', 'Erro ao exibir dados a serem editados na chamada');
         }
+    }
 
+    public function update(Request $request){
+        try{
+            $data = $request->all();
+            Chamada::findOrFail($request->id)->update($data);
+            return redirect('/home_chamadas')->with('msg', 'Chamada editada com sucesso');
+        }catch(Exception $e){
+            return redirect('/home_chamadas')->with('msg', 'Erro ao editar chamada. Tente novamente mais tarde!');
+        }
     }
 
 }

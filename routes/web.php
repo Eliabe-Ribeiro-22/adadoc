@@ -45,3 +45,4 @@ Route::post('/chamada', [ChamadasController::class, 'create']);
 // Deletar chamada
 Route::delete('/delchamada/{id}', [ChamadasController::class, 'delete'])->name('delchamada');
 Route::get('/edit_chamada/{id}', [ChamadasController::class, 'edit'])->name('edit_chamada');
+Route::put('/update_chamada', [ChamadasController::class, 'update'])->name('update_chamada');
