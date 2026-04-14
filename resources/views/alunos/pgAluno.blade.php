@@ -7,6 +7,9 @@
 <form action="/aluno" method="POST" class="inserir">
 	@csrf
 	<fieldset>
+		<label>Código</label>
+		<input type="number" name="id" value="0" readonly>
+
 		<label>NOME:</label>
 		<input type="text" name="NOME_ALUNO">
 

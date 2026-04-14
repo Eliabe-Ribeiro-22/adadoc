@@ -10,6 +10,7 @@
 	<fieldset>
 		<label>Código</label>
 		<input type="number" name="id" value="{{$nota->id}}" readonly>
+		
 		<label for="FAIXA">FAIXA ETARIA</label>
 		<select name="FAIXA" id="FAIXA">
 

@@ -7,6 +7,9 @@
 <form action="" method="get" class="inserir">
 	@csrf
 	<fieldset>
+		<label>Código</label>
+		<input type="number" name="id" value="{{$aluno->id}}" readonly>
+
 		<label>NOME:</label>
 		<input type="text" name="NOME_ALUNO" value="{{$aluno->NOME_ALUNO}}">
 

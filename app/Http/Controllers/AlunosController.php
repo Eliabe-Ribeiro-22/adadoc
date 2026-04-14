@@ -65,6 +65,15 @@ class AlunosController extends Controller
         }catch(Exception $e){
             return redirect('/home_alunos')->with('msg', 'Erro ao exibir o aluno a ser editado');
         }
-        
+    }
+
+    public function update(Request $request){
+        try {
+            $data = $request->all();
+            Aluno::FindOrFail($request->id)->update($data);
+            return redirect('/home_alunos')->with('msg', 'Sucesso ao editar aluno');
+        } catch (Exception $e) {
+            return redirect('/home_alunos')->with('msg', 'erro ao editar aluno');
+        }
     }
 }

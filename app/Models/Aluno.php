@@ -9,4 +9,10 @@ class Aluno extends Model
   public function notas(){
     return $this->hasMany('App\Models\Nota');
   }
+
+   // protected $cast = [
+   // 'items' => 'array'
+  //];
+  protected $dates = [];
+  protected $guarded = [];
 }
