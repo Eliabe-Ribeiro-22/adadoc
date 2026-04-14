@@ -1,16 +1,22 @@
 ## Kanban - ADADOC
 ## TO DO
 - dar funcionalidade cancelar ao botão cinza"cancelar"
-- integrar banco de dados
-    - editar
-
-## DOING
 - home_chamada
   - table chamadas feitas por ordem de data, sendo as mais recentes primeiro
 - home_notas
   - table notas de alunos por ordem de data, sendo as mais recentes primeiro
+- validações com JS
+- front-end com CSS
+- responsividade
+- testes unitários
+- testes de homologação
+- entrega da release final
+
+## DOING
 
 ## TEST
+
+## DONE
 - home_alunos
   - botão cadastrar novo aluno     
 - home_chamada
@@ -18,7 +24,9 @@
 - home_notas
   - botão cadastrar nova nota
 
-## DONE
+
+- integrar banco de dados
+    - editar
 - home_alunos
   - table alunos cadastrados em ordem alfabética A-Z ok
 - integrar banco de dados

@@ -38,3 +38,9 @@ Laravel, JS, CSS, HTML, PHP e MySQL
 ### 07-04 Eliabe
 - Criado rota, função no Controller e view para exibir dados a serem editados de notas
 - Criado rota, função no Controller e view para exibir dados a serem editados de aluno
+- Criado rota, função no Controller e view para exibir dados a serem editados de chamada
+
+### 14-04 Eliabe
+- Criado rota, adicionado função no Controller UPDATE, alteração da Model, para que "notas" sejam editadas
+- Criado rota, adicionado função no Controller UPDATE, alteração da Model, para que "alunos" sejam editadas
+- Criado rota, adicionado função no Controller UPDATE, alteração da Model, para que "chamadas" sejam editadas
